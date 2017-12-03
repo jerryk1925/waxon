@@ -380,11 +380,20 @@
                 background: url('phote.png') no-repeat;
                 width: 370px;
                 height: 237px;
+                
             }
         }
         &_book{
             &-photo{
                 background: url('book.png') no-repeat;
+                width: 370px;
+                height: 237px;
+                
+            }
+        }
+        &_mount{
+            &-photo{
+                background: url('mount.png') no-repeat;
                 width: 370px;
                 height: 237px;
             }
@@ -408,9 +417,41 @@
                 background: url('see.png') no-repeat;
                 width: 370px;
                 height: 237px;
+                filter: grayscale(100%);
             }
         }
-
+        &_phone:hover &_phone-photo,
+        &_mount:hover &_mount-photo,
+        &_book:hover &_book-photo,
+        &_birds:hover &_birds-photo,
+        &_journal:hover &_journal-photo,
+        &_see:hover &_see-photo{
+            box-shadow:0 0 0 128px rgba(0, 0, 0, 0.60) inset;
+        }
+        &_phone:hover &_phone-text,
+        &_mount:hover &_mount-text,
+        &_book:hover &_book-text,
+        &_birds:hover &_birds-text,
+        &_journal:hover &_journal-text,
+        &_see:hover &_see-text{
+            background-color: rgb(54, 47, 45); 
+        }
+        &_phone:hover &_phone-text-caption,
+        &_mount:hover &_mount-text-caption,
+        &_book:hover &_book-text-caption,
+        &_birds:hover &_birds-text-caption,
+        &_journal:hover &_journal-text-caption,
+        &_see:hover &_see-text-caption{
+            color: white; 
+        }
+        &_phone:hover &_phone-text-namePhoto,
+        &_mount:hover &_mount-text-namePhoto,
+        &_book:hover &_book-text-namePhoto,
+        &_birds:hover &_birds-text-namePhoto,
+        &_journal:hover &_journal-text-namePhoto,
+        &_see:hover &_see-text-namePhoto{
+            color: rgb(141, 126, 110); 
+        }
     }
     &__button{
         height: 50px;

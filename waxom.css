@@ -411,6 +411,12 @@
   height: 237px;
 }
 
+.projects__catalog_mount-photo {
+  background: url("mount.png") no-repeat;
+  width: 370px;
+  height: 237px;
+}
+
 .projects__catalog_birds-photo {
   background: url("birds.png") no-repeat;
   width: 370px;
@@ -427,6 +433,43 @@
   background: url("see.png") no-repeat;
   width: 370px;
   height: 237px;
+  filter: grayscale(100%);
+}
+
+.projects__catalog_phone:hover .projects__catalog_phone-photo,
+.projects__catalog_mount:hover .projects__catalog_mount-photo,
+.projects__catalog_book:hover .projects__catalog_book-photo,
+.projects__catalog_birds:hover .projects__catalog_birds-photo,
+.projects__catalog_journal:hover .projects__catalog_journal-photo,
+.projects__catalog_see:hover .projects__catalog_see-photo {
+  box-shadow: 0 0 0 128px rgba(0, 0, 0, 0.6) inset;
+}
+
+.projects__catalog_phone:hover .projects__catalog_phone-text,
+.projects__catalog_mount:hover .projects__catalog_mount-text,
+.projects__catalog_book:hover .projects__catalog_book-text,
+.projects__catalog_birds:hover .projects__catalog_birds-text,
+.projects__catalog_journal:hover .projects__catalog_journal-text,
+.projects__catalog_see:hover .projects__catalog_see-text {
+  background-color: #362f2d;
+}
+
+.projects__catalog_phone:hover .projects__catalog_phone-text-caption,
+.projects__catalog_mount:hover .projects__catalog_mount-text-caption,
+.projects__catalog_book:hover .projects__catalog_book-text-caption,
+.projects__catalog_birds:hover .projects__catalog_birds-text-caption,
+.projects__catalog_journal:hover .projects__catalog_journal-text-caption,
+.projects__catalog_see:hover .projects__catalog_see-text-caption {
+  color: white;
+}
+
+.projects__catalog_phone:hover .projects__catalog_phone-text-namePhoto,
+.projects__catalog_mount:hover .projects__catalog_mount-text-namePhoto,
+.projects__catalog_book:hover .projects__catalog_book-text-namePhoto,
+.projects__catalog_birds:hover .projects__catalog_birds-text-namePhoto,
+.projects__catalog_journal:hover .projects__catalog_journal-text-namePhoto,
+.projects__catalog_see:hover .projects__catalog_see-text-namePhoto {
+  color: #8d7e6e;
 }
 
 .projects__button {
