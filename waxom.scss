@@ -1,0 +1,431 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1234px;
+    height: 136px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height: 136px;
+        position: fixed;
+    }
+    &__logo {
+        margin-left: 30px;
+        background: url('logoHeader.png') no-repeat;
+        height: 56px;
+        width: 184px;
+    }
+    &__menu {
+        margin-left: 200px;
+        margin-right: 50px;
+        width: 680px;
+        height: 136px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        &_item {
+            &-link {
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            &-link:hover {
+                color: rgb(140, 128, 113);
+            }
+        }
+    }
+    &__equipment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 136px;
+        width: 80px;
+        &_basket {
+            background: url('cart.png') no-repeat;
+            height: 24px;
+            width: 18px;
+        }
+        &_search {
+            background: url('search.png') no-repeat;
+            height: 24px;
+            width: 24px;
+        }
+    }
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 1024px;
+    width: 1234px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background: url('portfolio.png') no-repeat;
+        height: 1024px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    &__header {
+        font-size: 36px;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+    }
+    &__banner {
+        margin: 20px 0;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        font-size: 52px;
+    }
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        width: 560px;
+    }
+    &__button {
+        margin-top: 50px;
+        height: 50px;
+        width: 170px;
+        &_item {
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            border: none;
+            background-color: rgb(153, 134, 117);
+            height: 50px;
+            width: 170px;
+            border-radius: 4px;
+            color: white;
+            box-shadow: 0 3px 0 rgb(105, 92, 83);
+        }
+    }
+}
+.aboutUs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 1234px;
+    height: 424px;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height: 424px;
+    }
+    &__webApp,
+    &__development,
+    &__customization,
+    &__marketing{
+        width: 280px;
+        text-align: center;
+        &_caption{
+            font-size: 22px;
+            font-family: "Raleway";
+            font-weight: 550;
+            line-height: 60px;
+        }
+        &_text{
+            font-size: 14px;
+            font-family: "Montserrat";
+            color: rgb(140, 140, 140);
+            line-height: 25px;
+        }
+        &_line{
+            display: inline-block;
+            text-align: center;
+            height: 35px;
+            width: 70px;
+            border-bottom: 2px solid rgb(241, 238, 233);
+        }
+    }
+    &__webApp{
+        &_icon{
+            display: inline-block;
+            background: url('web.png') no-repeat;
+            height:47px;
+            width: 46px;
+        }
+    }
+    &__development{
+        &_icon{
+            display: inline-block;
+            background: url('develp.png') no-repeat;
+            height: 40px;
+            width: 44px;
+            
+        }
+    }
+    &__customization{
+        &_icon{
+            display: inline-block;
+            background: url('cust.png') no-repeat;
+            height: 44px;
+            width: 44px;
+            
+        }
+    }
+    &__marketing{
+        &_icon{
+            display: inline-block;
+            background: url('mark.png') no-repeat;
+            height: 36px;
+            width: 51px;
+            
+        }
+    }
+    &__webApp:hover &__webApp_caption,
+    &__development:hover &__development_caption,
+    &__customization:hover &__customization_caption,
+    &__marketing:hover &__marketing_caption{
+        color: rgb(199, 178, 153);
+     
+    }
+    &__webApp:hover &__webApp_line,
+    &__development:hover &__development_line,
+    &__customization:hover &__customization_line,
+    &__marketing:hover &__marketing_line{
+        border-bottom: 2px solid rgb(199, 178, 153);
+    }
+    
+}
+.wordPress{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1234px;
+    height: 150px;
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height: 150px;
+        background: #271e1b; 
+        background: -webkit-linear-gradient(left, #271e1b 0%,#473025 100%); 
+    }
+    &__banner{
+        margin-left: 30px;
+        &_caption{
+            font-size: 28px;
+            font-family: "Raleway";
+            color: rgb(199, 178, 153);
+        }
+        &_text{
+            font-size: 18px;
+            font-family: "Montserrat";
+            color: rgb(97, 88, 85)
+        }
+    }
+    &__button{
+        margin-right: 30px;
+        height: 50px;
+        width: 170px;
+        &_item{
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            border: none;
+            background-color: rgb(153, 134, 117);
+            height: 50px;
+            width: 170px;
+            border-radius: 4px;
+            color: white;
+            box-shadow: 0 3px 0 rgb(105, 92, 83); 
+        }
+    }
+}
+.projects{
+    width: 1234px;
+    height: 1163px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height:1163px;
+    }
+    &__title{
+        text-align: center;
+        &_caption{ 
+            font-weight: bold;
+            font-size: 30px;
+            font-family: "Raleway";
+            color: rgb(85, 85, 85);
+        }
+        &_paragraph{
+            margin: 20px 0;
+            width: 700px;
+            font-size: 16px;
+            font-family: "Montserrat";
+            color: rgb(140, 140, 140);
+        }
+    }
+    &__menu{
+        height: 33px;
+        width: 605px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+        &_item{
+            margin:  0 5px;
+            text-align: center;
+            width: 120px;
+            line-height: 33px;
+            border: 2px solid rgb(248, 248, 248);
+            border-radius: 3px;
+            &-link{
+                font-weight: bold;
+                width: 120px;
+                font-size: 14px;
+                font-family: "Montserrat";
+                color: rgb(140, 140, 140);
+                text-decoration: none;
+                
+            }
+        }
+        &_item:nth-child(1){
+            width: 70px;
+        }
+        &_item:hover{
+            background-color:rgb(153, 134, 117) ;
+        }
+        &_item:hover &_item-link{
+            color: white;
+        }
+
+    }
+    &__catalog{
+        padding:0  30px;
+        height: 703px;
+        width: 1234px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content:space-between;	
+        
+        &_phone,
+        &_mount,
+        &_book,
+        &_birds,
+        &_journal,
+        &_see{
+            height: 338px;
+            width: 370px;
+            &-text{
+                padding: 30px;
+                height: 101px;
+                background-color: rgb(251, 250, 248);
+                &-caption{
+                    font-size: 20px;
+                    font-family: "Raleway";
+                    color: rgb(199, 178, 153);
+                }
+                &-namePhoto{
+                    padding-top: 8px;
+                    font-size: 14px;
+                    font-family: "Montserrat";
+                    color: rgb(209, 209, 209)
+                }
+            }
+
+        }
+        &_phone{
+            &-photo{
+                background: url('phote.png') no-repeat;
+                width: 370px;
+                height: 237px;
+            }
+        }
+        &_book{
+            &-photo{
+                background: url('book.png') no-repeat;
+                width: 370px;
+                height: 237px;
+            }
+        }
+        &_birds{
+            &-photo{
+                background: url('birds.png') no-repeat;
+                width: 370px;
+                height: 237px;
+            }
+        }
+        &_journal{
+            &-photo{
+                background: url('journal.png') no-repeat;
+                width: 370px;
+                height: 237px;
+            }
+        }
+        &_see{
+            &-photo{
+                background: url('see.png') no-repeat;
+                width: 370px;
+                height: 237px;
+            }
+        }
+
+    }
+    &__button{
+        height: 50px;
+        width: 170px;
+        &_item{
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            border: none;
+            background-color: rgb(153, 134, 117);
+            height: 50px;
+            width: 170px;
+            border-radius: 4px;
+            color: white;
+            box-shadow: 0 3px 0 rgb(105, 92, 83); 
+        }
+    }
+
+}
