@@ -428,6 +428,42 @@
         &_see:hover &_see-photo{
             box-shadow:0 0 0 128px rgba(0, 0, 0, 0.60) inset;
         }
+        &_phone:hover &_phone-photo{
+            background: 
+            url('hover.png') no-repeat 50% 50%,
+            url('phote.png') no-repeat ; 
+           
+        }
+        &_mount:hover &_mount-photo{
+            background: 
+            url('hover.png') no-repeat 50% 50%,
+            url('mount.png') no-repeat ; 
+           
+        }
+        &_book:hover &_book-photo{
+            background: 
+            url('hover.png') no-repeat 50% 50%,
+            url('book.png') no-repeat ; 
+           
+        }
+        &_birds:hover &_birds-photo{
+            background: 
+            url('hover.png') no-repeat 50% 50%,
+            url('birds.png') no-repeat ; 
+           
+        }
+        &_journal:hover &_journal-photo{
+            background: 
+            url('hover.png') no-repeat 50% 50%,
+            url('journal.png') no-repeat ; 
+           
+        }
+        &_see:hover &_see-photo{
+            background: 
+            url('hover.png') no-repeat 50% 50%,
+            url('see.png') no-repeat ; 
+           
+        }
         &_phone:hover &_phone-text,
         &_mount:hover &_mount-text,
         &_book:hover &_book-text,
@@ -469,4 +505,215 @@
         }
     }
 
+}
+.video{
+    height: 704px;
+    width: 1234px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background: url('video.png') no-repeat;
+        height: 704px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    &__play{
+        background: url('videoicon.png') no-repeat;
+        width: 100px;
+        height: 100px;
+    }
+    &__caption{
+        margin: 30px 0;
+        font-size: 30px;
+        font-family: "Raleway";
+        color: rgb(255, 255, 255);
+    }
+    &__text{
+        line-height: 1.7;
+        text-align: center;
+        font-size: 16px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        width: 580px;
+    }
+    &__time{
+        margin-top: 40px;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(199, 178, 153);
+    }
+}
+.mobileDevices{
+    height: 695px;
+    width: 1234px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    &__wrapper{
+        background: rgb(251, 250, 248);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: 695px;
+        width: 100%;
+    }
+    &__imagePhone{
+        background: url('BigPhone.png') no-repeat;
+        height: 695px;
+        width: 534px;
+       
+    }
+    &__aboutPhone{
+        width: 700px;
+        &_caption{
+            margin: 40px 0;
+            font-size: 30px;
+            font-family: "Raleway";
+            color: rgb(85, 85, 85);
+            font-weight: bold;
+        }
+        &_text{
+            font-size: 16px;
+            font-family: "Montserrat";
+            color: rgb(140, 140, 140);
+            line-height: 1.5;
+        }
+        &_list{
+            height: 220px;
+            width: 700px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            &-item{
+                width: 600px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-content: center;
+                align-items: center;
+                &-symbol{
+                    background: url('arrows.png') no-repeat;
+                    height: 21px;
+                    width: 22px;
+                }
+                &-par{
+                    
+                    line-height: 2;
+                    margin-left: 25px;
+                    font-size: 14px;
+                    font-family: "Montserrat";
+                    color: rgb(140, 140, 140);
+                }
+            }
+        }
+    }
+
+
+}
+.statics{
+    margin: 0 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 302px;
+    width: 1234px;
+    &__wrapper{
+        width: 100%;
+        height: 302px;
+        background: #271e1b; 
+        background: -webkit-linear-gradient(left, #271e1b 0%,#473025 100%);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    &__clients{
+        &_icon{
+            background: url('clients.png') no-repeat;
+            height: 44px;
+            width: 44px;
+        }
+    }
+    &__coffe{
+        &_icon{
+            background: url('cups.png') no-repeat;
+            height: 44px;
+            width: 48px;
+        }
+    }
+    &__blogPosts{
+        &_icon{
+            background: url('posts.png') no-repeat;
+            height: 44px;
+            width: 44px;
+        }
+    }
+    &__likes{
+        &_icon{
+            background: url('likes.png') no-repeat;
+            height: 44px;
+            width: 44px;
+        }
+    }
+    &__launch{
+        &_icon{
+            background: url('launch.png') no-repeat;
+            height: 44px;
+            width: 54px;
+        }
+    }
+    &__clients, &__coffe, &__blogPosts, &__likes,&__launch{
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+        &_quantity{
+            font-size: 48px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            line-height: 0.75;
+        }
+        &_name{
+            font-size: 14px;
+            font-family: "Montserrat";
+            color: rgb(199, 178, 153);
+            text-transform: uppercase;
+            line-height: 1.429;
+        }
+        &_line{
+            width: 30px;
+            border-bottom: 2px solid white;
+        }
+    }
 }
