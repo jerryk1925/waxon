@@ -436,37 +436,28 @@
   filter: grayscale(100%);
 }
 
-.projects__catalog_phone:hover .projects__catalog_phone-photo,
-.projects__catalog_mount:hover .projects__catalog_mount-photo,
-.projects__catalog_book:hover .projects__catalog_book-photo,
-.projects__catalog_birds:hover .projects__catalog_birds-photo,
-.projects__catalog_journal:hover .projects__catalog_journal-photo,
-.projects__catalog_see:hover .projects__catalog_see-photo {
-  box-shadow: 0 0 0 128px rgba(0, 0, 0, 0.6) inset;
-}
-
 .projects__catalog_phone:hover .projects__catalog_phone-photo {
-  background: url("hover.png") no-repeat 50% 50%, url("phote.png") no-repeat;
+  background: url("hover.png") no-repeat 50% 50%, url("photeHover.png") no-repeat;
 }
 
 .projects__catalog_mount:hover .projects__catalog_mount-photo {
-  background: url("hover.png") no-repeat 50% 50%, url("mount.png") no-repeat;
+  background: url("hover.png") no-repeat 50% 50%, url("mountHover.png") no-repeat;
 }
 
 .projects__catalog_book:hover .projects__catalog_book-photo {
-  background: url("hover.png") no-repeat 50% 50%, url("book.png") no-repeat;
+  background: url("hover.png") no-repeat 50% 50%, url("bookHover.png") no-repeat;
 }
 
 .projects__catalog_birds:hover .projects__catalog_birds-photo {
-  background: url("hover.png") no-repeat 50% 50%, url("birds.png") no-repeat;
+  background: url("hover.png") no-repeat 50% 50%, url("birdsHover.png") no-repeat;
 }
 
 .projects__catalog_journal:hover .projects__catalog_journal-photo {
-  background: url("hover.png") no-repeat 50% 50%, url("journal.png") no-repeat;
+  background: url("hover.png") no-repeat 50% 50%, url("journalHover.png") no-repeat;
 }
 
 .projects__catalog_see:hover .projects__catalog_see-photo {
-  background: url("hover.png") no-repeat 50% 50%, url("see.png") no-repeat;
+  background: url("hover.png") no-repeat 50% 50%, url("seeHover.png") no-repeat;
 }
 
 .projects__catalog_phone:hover .projects__catalog_phone-text,
@@ -734,4 +725,516 @@
 .statics__clients_line, .statics__coffe_line, .statics__blogPosts_line, .statics__likes_line, .statics__launch_line {
   width: 30px;
   border-bottom: 2px solid white;
+}
+
+.recentPosts {
+  height: 754px;
+  width: 1234px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.recentPosts__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 754px;
+}
+
+.recentPosts__caption {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Raleway";
+  color: #555555;
+  font-weight: bold;
+}
+
+.recentPosts__text {
+  width: 760px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #8c8c8c;
+}
+
+.recentPosts__slaidImage {
+  height: 395px;
+  width: 1234px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.recentPosts__slaidImage_men, .recentPosts__slaidImage_women, .recentPosts__slaidImage_ship {
+  width: 370px;
+  height: 395px;
+}
+
+.recentPosts__slaidImage_men_text, .recentPosts__slaidImage_women_text, .recentPosts__slaidImage_ship_text {
+  padding: 30px;
+  background: white;
+  height: 175px;
+}
+
+.recentPosts__slaidImage_men_text-caption, .recentPosts__slaidImage_women_text-caption, .recentPosts__slaidImage_ship_text-caption {
+  font-size: 20px;
+  font-family: "Raleway";
+  color: #555555;
+  line-height: 1.2;
+}
+
+.recentPosts__slaidImage_men_text-aboutThis, .recentPosts__slaidImage_women_text-aboutThis, .recentPosts__slaidImage_ship_text-aboutThis {
+  padding: 13px 0;
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: #8c8c8c;
+  line-height: 1.571;
+}
+
+.recentPosts__slaidImage_men_text-moreInf, .recentPosts__slaidImage_women_text-moreInf, .recentPosts__slaidImage_ship_text-moreInf {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #c7b299;
+  line-height: 1.429;
+  background: url("smallArows.png") no-repeat 90px 7px;
+}
+
+.recentPosts__slaidImage_men_image {
+  background: url("date.png") no-repeat 20px 20px, url("men.png") no-repeat;
+  width: 370px;
+  height: 220px;
+}
+
+.recentPosts__slaidImage_women_image {
+  background: url("date.png") no-repeat 20px 20px, url("women.png") no-repeat;
+  width: 370px;
+  height: 220px;
+}
+
+.recentPosts__slaidImage_ship_image {
+  background: url("date.png") no-repeat 20px 20px, url("ship.png") no-repeat;
+  width: 370px;
+  height: 220px;
+}
+
+.recentPosts__slaidImage_men:hover .recentPosts__slaidImage_men_text,
+.recentPosts__slaidImage_women:hover .recentPosts__slaidImage_women_text,
+.recentPosts__slaidImage_ship:hover .recentPosts__slaidImage_ship_text {
+  background: #362f2d;
+}
+
+.recentPosts__slaidImage_men:hover .recentPosts__slaidImage_men_text-caption,
+.recentPosts__slaidImage_women:hover .recentPosts__slaidImage_women_text-caption,
+.recentPosts__slaidImage_ship:hover .recentPosts__slaidImage_ship_text-caption {
+  color: #908070;
+}
+
+.recentPosts__slaidImage_men:hover .recentPosts__slaidImage_men_text-aboutThis,
+.recentPosts__slaidImage_women:hover .recentPosts__slaidImage_women_text-aboutThis,
+.recentPosts__slaidImage_ship:hover .recentPosts__slaidImage_ship_text-aboutThis {
+  color: white;
+}
+
+.recentPosts__slaidImage_men:hover .recentPosts__slaidImage_men_text-moreInf,
+.recentPosts__slaidImage_women:hover .recentPosts__slaidImage_women_text-moreInf,
+.recentPosts__slaidImage_ship:hover .recentPosts__slaidImage_ship_text-moreInf {
+  font-weight: bold;
+}
+
+.recentPosts__slaidImage_men:hover .recentPosts__slaidImage_men_image {
+  background: url("dateHover.png") no-repeat 20px 20px, url("menHover.png") no-repeat;
+}
+
+.recentPosts__slaidImage_women:hover .recentPosts__slaidImage_women_image {
+  background: url("dateHover.png") no-repeat 20px 20px, url("womenHover.png") no-repeat;
+}
+
+.recentPosts__slaidImage_ship:hover .recentPosts__slaidImage_ship_image {
+  background: url("dateHover.png") no-repeat 20px 20px, url("shipHover.png") no-repeat;
+}
+
+.sponsors {
+  height: 489px;
+  width: 1234px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.sponsors__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: url("sponsors.png") no-repeat;
+  height: 489px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.sponsors__barber {
+  background: url("barber.png") no-repeat;
+  width: 210px;
+  height: 127px;
+}
+
+.sponsors__delicious {
+  background: url("delicious.png") no-repeat;
+  width: 210px;
+  height: 210px;
+}
+
+.sponsors__designers {
+  background: url("designers.png") no-repeat;
+  width: 210px;
+  height: 130px;
+}
+
+.sponsors__royal {
+  background: url("royal.png") no-repeat;
+  width: 210px;
+  height: 164px;
+}
+
+.upperFooter {
+  height: 508px;
+  width: 1234px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.upperFooter__wrapper {
+  background: #191919;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 508px;
+}
+
+.upperFooter__aboutWaxon {
+  height: 348px;
+  width: 260px;
+}
+
+.upperFooter__aboutWaxon_caption {
+  background: url("logoHeader.png") no-repeat;
+  height: 56px;
+  width: 184px;
+}
+
+.upperFooter__aboutWaxon_text {
+  margin: 30px 0;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #555555;
+  line-height: 1.714;
+  font-weight: bold;
+}
+
+.upperFooter__aboutWaxon_more {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #d1d1d1;
+  line-height: 1.429;
+  font-weight: bold;
+  background: url("arrowsWhite.png") no-repeat 90px 7px;
+}
+
+.upperFooter__aboutWaxon:hover .upperFooter__aboutWaxon_text {
+  color: #c7b299;
+}
+
+.upperFooter__recentPosts {
+  height: 348px;
+  width: 276px;
+}
+
+.upperFooter__recentPosts_caption {
+  font-size: 24px;
+  font-family: "Raleway";
+  color: white;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 56px;
+}
+
+.upperFooter__recentPosts_post {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start;
+  width: 276px;
+  height: 99px;
+}
+
+.upperFooter__recentPosts_post-date {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #363636;
+  line-height: 1.667;
+  font-weight: bold;
+}
+
+.upperFooter__recentPosts_post-text {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #555555;
+  line-height: 1.429;
+  font-weight: bold;
+}
+
+.upperFooter__recentPosts_post:nth-child(3) {
+  border-top: 1px solid #1d1d1d;
+  border-bottom: 1px solid #1d1d1d;
+}
+
+.upperFooter__recentPosts_post:hover .upperFooter__recentPosts_post-date {
+  color: white;
+}
+
+.upperFooter__recentPosts_post:hover .upperFooter__recentPosts_post-text {
+  color: #c7b299;
+}
+
+.upperFooter__twitter {
+  height: 348px;
+  width: 276px;
+}
+
+.upperFooter__twitter_caption {
+  font-size: 24px;
+  font-family: "Raleway";
+  color: white;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 56px;
+}
+
+.upperFooter__twitter_twett {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start;
+  width: 276px;
+  height: 99px;
+}
+
+.upperFooter__twitter_twett-text {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #555555;
+  line-height: 1.429;
+  font-weight: bold;
+}
+
+.upperFooter__twitter_twett-text-link {
+  color: #00bff3;
+}
+
+.upperFooter__twitter_twett-text-linkWhite {
+  color: white;
+}
+
+.upperFooter__twitter_twett-date {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #363636;
+  line-height: 1.667;
+  font-weight: bold;
+}
+
+.upperFooter__twitter_twett:hover .upperFooter__twitter_twett-text {
+  color: #c7b299;
+}
+
+.upperFooter__twitter_twett:hover .upperFooter__twitter_twett-date {
+  color: white;
+}
+
+.upperFooter__twitter_twett:nth-child(3) {
+  height: 119px;
+  border-top: 1px solid #1d1d1d;
+  border-bottom: 1px solid #1d1d1d;
+}
+
+.upperFooter__widget {
+  height: 348px;
+  width: 271px;
+}
+
+.upperFooter__widget_caption {
+  font-size: 24px;
+  font-family: "Raleway";
+  color: white;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 56px;
+}
+
+.upperFooter__widget_gallery {
+  margin-top: 10px;
+  height: 207px;
+  width: 271px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-between;
+}
+
+.upperFooter__widget_gallery-doublePhone {
+  background: url("doublePhone.png") no-repeat;
+  width: 130px;
+  height: 98px;
+}
+
+.upperFooter__widget_gallery-paper {
+  background: url("paper.png") no-repeat;
+  width: 130px;
+  height: 98px;
+}
+
+.upperFooter__widget_gallery-smallJournal {
+  background: url("smallJournal.png") no-repeat;
+  width: 130px;
+  height: 98px;
+}
+
+.upperFooter__widget_gallery-pinkIcon {
+  background: url("pinkIcon.png") no-repeat;
+  width: 130px;
+  height: 98px;
+}
+
+.lowerFooter {
+  height: 112px;
+  width: 1234px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.lowerFooter__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: #111111;
+  width: 100%;
+  height: 112px;
+}
+
+.lowerFooter__contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.lowerFooter__contact_items {
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: #555555;
+  line-height: 1.538;
+  font-weight: bold;
+}
+
+.lowerFooter__contact_items-link {
+  color: #fafafa;
+}
+
+.lowerFooter__contact_items:nth-child(2) {
+  border-right: 1px solid #1d1d1d;
+  border-left: 1px solid #1d1d1d;
+  width: 111px;
+  text-align: center;
+}
+
+.lowerFooter__contact_items:nth-child(3) {
+  border-right: 1px solid #1d1d1d;
+  width: 54px;
+  text-align: center;
+}
+
+.lowerFooter__contact_items:hover {
+  color: #c7b299;
+}
+
+.lowerFooter__developer {
+  width: 321px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.lowerFooter__developer_items {
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: #555555;
+  line-height: 1.538;
+  font-weight: bold;
+}
+
+.lowerFooter__developer_items-link {
+  color: #fafafa;
+}
+
+.lowerFooter__developer_items:nth-child(1) {
+  width: 163px;
+}
+
+.lowerFooter__developer_items:nth-child(2) {
+  border-left: 1px solid #1d1d1d;
+  width: 157px;
+  text-align: center;
+}
+
+.lowerFooter__developer_items:hover {
+  color: #c7b299;
 }

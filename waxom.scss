@@ -63,7 +63,6 @@
         }
     }
 }
-
 .portfolio {
     display: flex;
     flex-direction: column;
@@ -420,48 +419,40 @@
                 filter: grayscale(100%);
             }
         }
-        &_phone:hover &_phone-photo,
-        &_mount:hover &_mount-photo,
-        &_book:hover &_book-photo,
-        &_birds:hover &_birds-photo,
-        &_journal:hover &_journal-photo,
-        &_see:hover &_see-photo{
-            box-shadow:0 0 0 128px rgba(0, 0, 0, 0.60) inset;
-        }
         &_phone:hover &_phone-photo{
             background: 
             url('hover.png') no-repeat 50% 50%,
-            url('phote.png') no-repeat ; 
+            url('photeHover.png') no-repeat ; 
            
         }
         &_mount:hover &_mount-photo{
             background: 
             url('hover.png') no-repeat 50% 50%,
-            url('mount.png') no-repeat ; 
+            url('mountHover.png') no-repeat ; 
            
         }
         &_book:hover &_book-photo{
             background: 
             url('hover.png') no-repeat 50% 50%,
-            url('book.png') no-repeat ; 
+            url('bookHover.png') no-repeat ; 
            
         }
         &_birds:hover &_birds-photo{
             background: 
             url('hover.png') no-repeat 50% 50%,
-            url('birds.png') no-repeat ; 
+            url('birdsHover.png') no-repeat ; 
            
         }
         &_journal:hover &_journal-photo{
             background: 
             url('hover.png') no-repeat 50% 50%,
-            url('journal.png') no-repeat ; 
+            url('journalHover.png') no-repeat ; 
            
         }
         &_see:hover &_see-photo{
             background: 
             url('hover.png') no-repeat 50% 50%,
-            url('see.png') no-repeat ; 
+            url('seeHover.png') no-repeat ; 
            
         }
         &_phone:hover &_phone-text,
@@ -714,6 +705,465 @@
         &_line{
             width: 30px;
             border-bottom: 2px solid white;
+        }
+    }
+}
+.recentPosts{
+    height: 754px;
+    width: 1234px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height: 754px;
+    }
+    &__caption{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-family: "Raleway";
+        color: rgb(85, 85, 85);
+        font-weight: bold;
+    }
+    &__text{
+        width: 760px;
+        text-align: center;
+        font-size: 16px;
+        font-family: "Montserrat";
+        color: rgb(140, 140, 140);
+    }
+    &__slaidImage{
+        height: 395px;
+        width: 1234px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        &_men, &_women, &_ship{
+            width: 370px;
+            height: 395px;
+            &_text{
+                padding: 30px;
+                background: rgb(255, 255, 255);
+                height: 175px;
+                &-caption{
+                    font-size: 20px;
+                    font-family: "Raleway";
+                    color: rgb(85, 85, 85);
+                    line-height: 1.2;
+                    
+                }
+                &-aboutThis{
+                   
+                    padding: 13px 0;
+                    font-size: 13px;
+                    font-family: "Montserrat";
+                    color: rgb(140, 140, 140);
+                    line-height: 1.571;
+                }
+                &-moreInf{
+                    font-size: 14px;
+                    font-family: "Montserrat";
+                    color: rgb(199, 178, 153);
+                    line-height: 1.429;
+                    background: url('smallArows.png') no-repeat 90px 7px;
+                }
+            }
+            
+        }
+        &_men{
+            &_image{
+                background: url('date.png') no-repeat 20px 20px,url('men.png') no-repeat;
+                width: 370px;
+                height: 220px;
+            }
+        }
+        &_women{
+            &_image{
+                background: url('date.png') no-repeat 20px 20px,url('women.png') no-repeat;
+                width: 370px;
+                height: 220px;
+            }
+        }
+        &_ship{
+            &_image{
+                background: url('date.png') no-repeat 20px 20px,url('ship.png') no-repeat;
+                width: 370px;
+                height: 220px;
+            }
+        }
+        &_men:hover &_men_text,
+        &_women:hover &_women_text,
+        &_ship:hover &_ship_text{
+            background: rgb(54, 47, 45);
+        }
+        &_men:hover &_men_text-caption,
+        &_women:hover &_women_text-caption,
+        &_ship:hover &_ship_text-caption{
+            color: rgb(144, 128, 112);
+        }
+        &_men:hover &_men_text-aboutThis,
+        &_women:hover &_women_text-aboutThis,
+        &_ship:hover &_ship_text-aboutThis{
+            color: white;
+        }
+        &_men:hover &_men_text-moreInf,
+        &_women:hover &_women_text-moreInf,
+        &_ship:hover &_ship_text-moreInf{
+            font-weight: bold;
+        }
+        &_men:hover &_men_image
+        {
+            background:url('dateHover.png') no-repeat 20px 20px, url('menHover.png') no-repeat,
+        }
+        &_women:hover &_women_image
+        {
+            background:url('dateHover.png') no-repeat 20px 20px, url('womenHover.png') no-repeat,
+        }
+        &_ship:hover &_ship_image
+        {
+            background:url('dateHover.png') no-repeat 20px 20px, url('shipHover.png') no-repeat,
+        }
+
+    }
+}
+.sponsors{
+    height: 489px;
+    width: 1234px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background: url('sponsors.png') no-repeat;
+        height: 489px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    &__barber{
+        background: url('barber.png') no-repeat;
+        width: 210px ;
+        height: 127px;
+    }
+    &__delicious{
+        background: url('delicious.png') no-repeat;
+        width: 210px ;
+        height: 210px;
+    }
+    &__designers{
+        background: url('designers.png') no-repeat;
+        width: 210px ;
+        height: 130px;
+    }
+    &__royal{
+        background: url('royal.png') no-repeat;
+        width: 210px ;
+        height: 164px;
+    }
+
+}
+.upperFooter{
+    height: 508px;
+    width: 1234px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    &__wrapper{
+        background: rgb(25, 25, 25);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height: 508px;
+    }
+    &__aboutWaxon{
+        height: 348px;
+        width: 260px;
+        &_caption{
+            background: url('logoHeader.png') no-repeat;
+            height: 56px;
+            width: 184px;
+        }
+        &_text{
+            margin: 30px 0;
+            font-size: 14px;
+            font-family: "Montserrat";
+            color: rgb(85, 85, 85);
+            line-height: 1.714;
+            font-weight: bold;
+        }
+        &_more{
+            font-size: 14px;
+            font-family: "Montserrat";
+            color: rgb(209, 209, 209);
+            line-height: 1.429;
+            font-weight: bold;
+            background: url('arrowsWhite.png') no-repeat   90px 7px;
+        }
+       
+    }
+    &__aboutWaxon:hover &__aboutWaxon_text{
+        color: rgb(199, 178, 153);
+    }
+    &__recentPosts{
+        height: 348px;
+        width: 276px;
+        &_caption{
+            font-size: 24px;
+            font-family: "Raleway";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+
+            vertical-align: middle;
+            line-height: 56px;
+        }
+        &_post{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: flex-start;
+            width: 276px;
+            height: 99px;
+            &-date{
+                font-size: 12px;
+                font-family: "Montserrat";
+                color: rgb(54, 54, 54);
+                line-height: 1.667;
+                font-weight: bold;
+            }
+            &-text{
+                font-size: 14px;
+                font-family: "Montserrat";
+                color: rgb(85, 85, 85);
+                line-height: 1.429;
+                font-weight: bold;
+            }
+        }
+        &_post:nth-child(3){
+            border-top: 1px solid  rgb(29, 29, 29);
+            border-bottom:1px solid  rgb(29,29, 29);
+            
+        }
+        &_post:hover &_post-date{
+            color: rgb(255, 255, 255);
+        }
+        &_post:hover &_post-text{
+            color: rgb(199, 178, 153);
+        }
+    }
+    &__twitter{
+        height: 348px;
+        width: 276px;
+        &_caption{
+            font-size: 24px;
+            font-family: "Raleway";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+
+            vertical-align: middle;
+            line-height: 56px;
+        }
+        &_twett{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: flex-start;
+            width: 276px;
+            height: 99px;
+            &-text{
+                font-size: 14px;
+                font-family: "Montserrat";
+                color: rgb(85, 85, 85);
+                line-height: 1.429;
+                font-weight: bold;
+                &-link{
+                    color: rgb(0, 191, 243);
+                }
+                &-linkWhite{
+                    color: white;
+                }
+            }
+            &-date{
+                font-size: 12px;
+                font-family: "Montserrat";
+                color: rgb(54, 54, 54);
+                line-height: 1.667;
+                font-weight: bold;
+            }
+        }
+        &_twett:hover &_twett-text{
+            color: rgb(199, 178, 153);
+        }
+        &_twett:hover &_twett-date{
+            color: rgb(255, 255, 255);
+        }
+        &_twett:nth-child(3){
+            height: 119px;
+            border-top: 1px solid  rgb(29, 29, 29);
+            border-bottom:1px solid  rgb(29,29, 29);
+            
+        }
+    }
+    &__widget{
+        height: 348px;
+        width: 271px;
+        &_caption{
+            font-size: 24px;
+            font-family: "Raleway";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            vertical-align: middle;
+            line-height: 56px;
+        }
+        &_gallery{
+            margin-top: 10px;
+            height: 207px;
+            width: 271px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-content:space-between;
+            &-doublePhone{
+                background: url('doublePhone.png') no-repeat;
+                width: 130px;
+                height: 98px;
+            }
+            &-paper{
+                background: url('paper.png') no-repeat;
+                width: 130px;
+                height: 98px;
+            }
+            &-smallJournal{
+                background: url('smallJournal.png') no-repeat;
+                width: 130px;
+                height: 98px;
+            }
+            &-pinkIcon{
+                background: url('pinkIcon.png') no-repeat;
+                width: 130px;
+                height: 98px;
+            }
+        }
+    }
+}
+.lowerFooter{
+    height: 112px;
+    width:1234px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background: rgb(17, 17, 17);
+        width:100%;
+        height: 112px;
+    }
+    &__contact{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        width: 400px;
+        &_items{
+            font-size: 13px;
+            font-family: "Montserrat";
+            color: rgb(85, 85, 85);
+            line-height: 1.538;
+            font-weight: bold;
+            &-link{
+                color:rgb(250, 250, 250);
+            }
+        }
+        &_items:nth-child(2){
+            border-right:1px solid rgb(29, 29, 29);
+            border-left:1px solid rgb(29, 29, 29);
+            width:111px;
+            text-align: center;
+        }
+        &_items:nth-child(3){
+            border-right:1px solid rgb(29, 29, 29);
+            width:54px;
+            text-align: center;
+        }
+        &_items:hover{
+            color: rgb(199, 178, 153); 
+        }
+    }
+    &__developer{
+        width: 321px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        &_items{
+            font-size: 13px;
+            font-family: "Montserrat";
+            color: rgb(85, 85, 85);
+            line-height: 1.538;
+            font-weight: bold;
+            &-link{
+                color:rgb(250, 250, 250);
+            }
+        }
+        &_items:nth-child(1){
+            width:163px;
+        }
+        &_items:nth-child(2){
+            border-left:1px solid rgb(29, 29, 29);
+            width:157px;
+            text-align: center;
+        }
+        &_items:hover{
+            color: rgb(199, 178, 153); 
         }
     }
 }
