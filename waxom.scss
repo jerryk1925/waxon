@@ -6,7 +6,16 @@
     align-items: center;
     width: 1234px;
     height: 136px;
+    @media only screen and (max-width: 767px) {
+        width: 760px;
+        
+    }
+    @media only screen and (max-width: 479px) {
+        width: 479px;
+        max-height: 80px;
+    }
     &__wrapper {
+        background: rgba(25, 25, 25, 0.2)  ;     
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -14,14 +23,29 @@
         align-content: center;
         align-items: center;
         width: 100%;
-        height: 136px;
+       height: 136px;
         position: fixed;
+        z-index: 10;
+        @media only screen and (max-width: 767px) {
+            width: 760px;
+        }
+        @media only screen and (max-width: 479px) {
+            width: 479px;
+            max-height: 80px;
+        }
     }
     &__logo {
         margin-left: 30px;
         background: url('logoHeader.png') no-repeat;
         height: 56px;
         width: 184px;
+        @media only screen and (max-width: 767px) {
+            width: 65px;
+            
+        }
+        @media only screen and (max-width: 479px) {
+            width:65px;
+        }
     }
     &__menu {
         margin-left: 200px;
@@ -33,6 +57,15 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
+        @media only screen and (max-width: 767px) {
+            width: 600px;
+            margin:0px;
+        }
+        @media only screen and (max-width: 479px) {
+            width: 479px;
+            display: none;
+        }
+        
         &_item {
             &-link {
                 color: white;
@@ -51,15 +84,27 @@
         justify-content: space-between;
         height: 136px;
         width: 80px;
+        @media only screen and (max-width: 767px) {
+            margin-left: 5px;
+            width: 50px;
+        }
+        @media only screen and (max-width: 479px) {
+            width:50px;
+        }
         &_basket {
             background: url('cart.png') no-repeat;
             height: 24px;
             width: 18px;
+            @media only screen and (max-width: 767px) {
+                display: none;
+            }
+
         }
         &_search {
             background: url('search.png') no-repeat;
             height: 24px;
             width: 24px;
+            
         }
     }
 }
@@ -72,6 +117,16 @@
     align-items: center;
     height: 1024px;
     width: 1234px;
+    @media only screen and (max-width: 767px) {
+        width: 760px;
+       
+    }
+    @media only screen and (max-width: 479px) {
+        width: 479px;
+        height: 700px;
+    }
+
+    
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -84,11 +139,22 @@
         width: 100%;
         background-size: cover;
         background-position: center;
+        @media only screen and (max-width: 767px) {
+            width: 760px;
+        }
+        @media only screen and (max-width: 479px) {
+            width: 479px;
+            height: 700px;
+        }
+        
     }
     &__header {
         font-size: 36px;
         font-family: 'Raleway', sans-serif;
         color: white;
+        @media only screen and (max-width: 479px) {
+            font-size: 26px;
+        }
     }
     &__banner {
         margin: 20px 0;
@@ -96,6 +162,10 @@
         font-family: 'Raleway', sans-serif;
         color: white;
         font-size: 52px;
+        @media only screen and (max-width: 479px) {
+            font-size: 45px;
+            text-align: center;
+        }
     }
     &__text {
         font-family: 'Montserrat', sans-serif;
@@ -103,6 +173,10 @@
         font-size: 16px;
         text-align: center;
         width: 560px;
+        @media only screen and (max-width: 479px) {
+            font-size: 16px;
+            width: 400px;
+        }
     }
     &__button {
         margin-top: 50px;
@@ -113,33 +187,50 @@
             font-family: 'Raleway', sans-serif;
             border: none;
             background-color: rgb(153, 134, 117);
-            height: 50px;
-            width: 170px;
+            min-height: 50px;
+            min-width: 170px;
             border-radius: 4px;
             color: white;
             box-shadow: 0 3px 0 rgb(105, 92, 83);
         }
     }
 }
-.aboutUs{
+.aboutus{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 1234px;
     height: 424px;
+    @media only screen and (max-width: 767px) {
+        width: 760px;
+        height: 604px;
+       
+    }
+    @media only screen and (max-width: 479px) {
+        width:460px;
+        height: 950px;
+    }
     &__wrapper{
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: center;
         align-content: center;
         align-items: center;
         width: 100%;
         height: 424px;
+        @media only screen and (max-width: 767px) {
+            width: 760px;
+            height: 604px;
+        }
+        @media only screen and (max-width: 479px) {
+            width:460px;
+            height: 950px;
+        }
     }
-    &__webApp,
+    &__webapp,
     &__development,
     &__customization,
     &__marketing{
@@ -165,7 +256,7 @@
             border-bottom: 2px solid rgb(241, 238, 233);
         }
     }
-    &__webApp{
+    &__webapp{
         &_icon{
             display: inline-block;
             background: url('web.png') no-repeat;
@@ -200,14 +291,14 @@
             
         }
     }
-    &__webApp:hover &__webApp_caption,
+    &__webapp:hover &__webapp_caption,
     &__development:hover &__development_caption,
     &__customization:hover &__customization_caption,
     &__marketing:hover &__marketing_caption{
         color: rgb(199, 178, 153);
      
     }
-    &__webApp:hover &__webApp_line,
+    &__webapp:hover &__webapp_line,
     &__development:hover &__development_line,
     &__customization:hover &__customization_line,
     &__marketing:hover &__marketing_line{
@@ -223,6 +314,14 @@
     align-items: center;
     width: 1234px;
     height: 150px;
+    @media only screen and (max-width: 800px) {
+        width: 760px;
+    }
+    @media only screen and (max-width: 479px) {
+        width:479px;
+        
+    }
+
     &__wrapper{
         display: flex;
         flex-direction: row;
@@ -234,6 +333,13 @@
         height: 150px;
         background: #271e1b; 
         background: -webkit-linear-gradient(left, #271e1b 0%,#473025 100%); 
+        @media only screen and (max-width: 800px) {
+            width: 760px;
+        }
+        @media only screen and (max-width: 479px) {
+            width:479px;
+            
+        }
     }
     &__banner{
         margin-left: 30px;
@@ -241,17 +347,24 @@
             font-size: 28px;
             font-family: "Raleway";
             color: rgb(199, 178, 153);
+            @media only screen and (max-width: 479px) {
+                font-size: 20px;
+                
+            }
         }
         &_text{
             font-size: 18px;
             font-family: "Montserrat";
-            color: rgb(97, 88, 85)
+            color: rgb(97, 88, 85);
+            @media only screen and (max-width: 479px) {
+                font-size: 14px;
+                
+            }
         }
     }
     &__button{
         margin-right: 30px;
-        height: 50px;
-        width: 170px;
+        
         &_item{
             font-weight: bold;
             font-family: 'Raleway', sans-serif;
@@ -262,18 +375,30 @@
             border-radius: 4px;
             color: white;
             box-shadow: 0 3px 0 rgb(105, 92, 83); 
+                
+                
+            
         }
     }
 }
 .projects{
     width: 1234px;
-    height: 1163px;
+    min-height: 1163px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-content: center;
     align-items: center;
+    @media only screen and (max-width: 800px) {
+        width: 760px;
+       
+    }
+    @media only screen and (max-width: 479px) {
+        width:479px;
+        height: 2500px;
+        
+    }
     &__wrapper{
         display: flex;
         flex-direction: row;
@@ -282,7 +407,11 @@
         align-content: center;
         align-items: center;
         width: 100%;
-        height:1163px;
+        min-height:1163px;
+        @media only screen and (max-width: 479px) {
+            width:479px;
+            height: 2500px;
+        }
     }
     &__title{
         text-align: center;
@@ -291,6 +420,7 @@
             font-size: 30px;
             font-family: "Raleway";
             color: rgb(85, 85, 85);
+           
         }
         &_paragraph{
             margin: 20px 0;
@@ -298,6 +428,10 @@
             font-size: 16px;
             font-family: "Montserrat";
             color: rgb(140, 140, 140);
+            @media only screen and (max-width: 479px) {
+                font-size: 16px;
+                width: 300px;
+            }
         }
     }
     &__menu{
@@ -305,9 +439,16 @@
         width: 605px;
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        align-content:space-between;
+        @media only screen and (max-width: 479px) {
+            width: 400px;
+            height: 80px;
+            
+        }
+        
 
         &_item{
             margin:  0 5px;
@@ -339,14 +480,18 @@
     }
     &__catalog{
         padding:0  30px;
-        height: 703px;
+        min-height: 703px;
         width: 1234px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
-        align-content:space-between;	
+        align-content:space-between;
+        @media only screen and (max-width: 479px) {
+            width: 435px;  
+        }
+        	
         
         &_phone,
         &_mount,
@@ -356,6 +501,7 @@
         &_see{
             height: 338px;
             width: 370px;
+            
             &-text{
                 padding: 30px;
                 height: 101px;
@@ -506,6 +652,14 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+    @media screen and (max-width: 800px) {
+        width: 760px;
+       
+    }
+    @media only screen and (max-width: 479px) {
+        width:479px;
+        height: 500px;
+    }
     &__wrapper{
         display: flex;
         flex-direction: column;
@@ -518,6 +672,11 @@
         width: 100%;
         background-size: cover;
         background-position: center;
+        @media only screen and (max-width: 479px) {
+            width:479px;
+            height: 500px;
+            
+        }
     }
     &__play{
         background: url('videoicon.png') no-repeat;
@@ -537,6 +696,10 @@
         font-family: "Montserrat";
         color: rgb(255, 255, 255);
         width: 580px;
+        @media only screen and (max-width: 479px) {
+            width:440px;
+            
+        }
     }
     &__time{
         margin-top: 40px;
@@ -547,14 +710,22 @@
     }
 }
 .mobileDevices{
-    height: 695px;
+    min-height: 695px;
     width: 1234px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
+    @media screen and (max-width: 800px) {
+        width: 760px;
+       
+    }
+    @media only screen and (max-width: 479px) {
+        width:479px;
+        
+    }
     &__wrapper{
         background: rgb(251, 250, 248);
         display: flex;
@@ -563,29 +734,52 @@
         justify-content: center;
         align-content: center;
         align-items: center;
-        height: 695px;
+        min-height: 695px;
         width: 100%;
+        @media only screen and (max-width: 479px) {
+            width:479px;
+            
+            
+        }
     }
     &__imagePhone{
         background: url('BigPhone.png') no-repeat;
         height: 695px;
         width: 534px;
+        @media only screen and (max-width: 479px) {
+            width:479px;
+           
+        }
        
     }
     &__aboutPhone{
         width: 700px;
+        @media only screen and (max-width: 479px) {
+            width:479px;
+          
+        }
         &_caption{
             margin: 40px 0;
             font-size: 30px;
             font-family: "Raleway";
             color: rgb(85, 85, 85);
             font-weight: bold;
+            @media only screen and (max-width: 479px) {
+                text-align: center;
+                 
+            }
         }
         &_text{
             font-size: 16px;
             font-family: "Montserrat";
             color: rgb(140, 140, 140);
             line-height: 1.5;
+            @media only screen and (max-width: 479px) {
+                font-size: 15px;
+                
+               margin:  0 20px;
+              
+            }
         }
         &_list{
             height: 220px;
@@ -596,6 +790,13 @@
             justify-content: center;
             align-content: center;
             align-items: center;
+            
+            
+            @media only screen and (max-width: 479px) {
+                width: 459px;
+                margin-left:  10px ;
+                
+            }
             &-item{
                 width: 600px;
                 display: flex;
@@ -604,10 +805,17 @@
                 justify-content: flex-start;
                 align-content: center;
                 align-items: center;
+                
+                @media only screen and (max-width: 479px) {
+                    width: 479px;
+                  
+                }
+                
                 &-symbol{
                     background: url('arrows.png') no-repeat;
                     height: 21px;
                     width: 22px;
+                   
                 }
                 &-par{
                     
@@ -616,6 +824,12 @@
                     font-size: 14px;
                     font-family: "Montserrat";
                     color: rgb(140, 140, 140);
+                    
+                    @media only screen and (max-width: 479px) {
+                        font-size: 13px;
+                       margin-left:  10px ;
+                      
+                    }
                 }
             }
         }
@@ -627,15 +841,30 @@
     margin: 0 150px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    height: 302px;
+    min-height: 302px;
     width: 1234px;
+    @media screen and (max-width: 800px) {
+        width: 760px;
+        margin: 0 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content:space-between;
+       
+    }
+    @media only screen and (max-width: 479px) {
+        width:479px;
+        
+    }
     &__wrapper{
         width: 100%;
-        height: 302px;
+        min-height: 302px;
         background: #271e1b; 
         background: -webkit-linear-gradient(left, #271e1b 0%,#473025 100%);
         display: flex;
@@ -644,6 +873,10 @@
         justify-content: center;
         align-content: center;
         align-items: center;
+        @media only screen and (max-width: 479px) {
+            width:479px;
+            
+        }
     }
     &__clients{
         &_icon{
@@ -688,6 +921,10 @@
         justify-content: space-around;
         align-content: center;
         align-items: center;
+        @media only screen and (max-width: 479px) {
+            width:180px;
+            
+        }
 
         &_quantity{
             font-size: 48px;
@@ -709,7 +946,7 @@
     }
 }
 .recentPosts{
-    height: 754px;
+    min-height: 754px;
     width: 1234px;
     display: flex;
     flex-direction: column;
@@ -717,6 +954,15 @@
     justify-content: space-around;
     align-content: center;
     align-items: center;
+    @media screen and (max-width: 800px) {
+        width: 760px;
+       
+    }
+    @media only screen and (max-width: 479px) {
+        width:479px;
+        height:1400px;
+        
+    }
     &__wrapper{
         display: flex;
         flex-direction: row;
@@ -725,7 +971,11 @@
         align-content: center;
         align-items: center;
         width: 100%;
-        height: 754px;
+        min-height: 754px;
+        @media only screen and (max-width: 479px) {
+            width:479px;
+            height:1400px;
+        }
     }
     &__caption{
         display: flex;
@@ -745,16 +995,26 @@
         font-size: 16px;
         font-family: "Montserrat";
         color: rgb(140, 140, 140);
+        @media only screen and (max-width: 479px) {
+            width: 420px;
+            
+        }
     }
     &__slaidImage{
-        height: 395px;
+        min-height: 395px;
         width: 1234px;
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-content: center;
         align-items: center;
+        @media only screen and (max-width: 479px) {
+            width: 450px;
+            height: 1200px;
+          
+            
+        }
         &_men, &_women, &_ship{
             width: 370px;
             height: 395px;
@@ -848,10 +1108,18 @@
     width: 1234px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-content: center;
+    align-content: space-around;
     align-items: center;
+    @media screen and (max-width: 800px) {
+        width: 760px;
+       
+    }
+    @media only screen and (max-width: 479px) {
+        width:479px;
+        
+    }
     &__wrapper{
         display: flex;
         flex-direction: row;
@@ -864,6 +1132,10 @@
         width: 100%;
         background-size: cover;
         background-position: center;
+        @media only screen and (max-width: 479px) {
+            width:479px;
+            
+        }
     }
     &__barber{
         background: url('barber.png') no-repeat;
@@ -888,14 +1160,23 @@
 
 }
 .upperFooter{
-    height: 508px;
+    min-height: 508px;
     width: 1234px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    @media screen and (max-width: 800px) {
+        width: 760px;
+       
+    }
+    @media only screen and (max-width: 479px) {
+        width:479px;
+        min-height: 760px;
+        margin: 0 5px;
+    }
     &__wrapper{
         background: rgb(25, 25, 25);
         display: flex;
@@ -905,11 +1186,19 @@
         align-content: center;
         align-items: center;
         width: 100%;
-        height: 508px;
+        min-height: 508px;
+        @media only screen and (max-width: 479px) {
+            width:479px;
+            min-height: 760px;
+        }
     }
     &__aboutWaxon{
         height: 348px;
         width: 260px;
+        @media only screen and (max-width: 479px) {
+            width: 230px;
+            
+        }
         &_caption{
             background: url('logoHeader.png') no-repeat;
             height: 56px;
@@ -919,7 +1208,7 @@
             margin: 30px 0;
             font-size: 14px;
             font-family: "Montserrat";
-            color: rgb(85, 85, 85);
+            color: #555555;
             line-height: 1.714;
             font-weight: bold;
         }
@@ -939,6 +1228,10 @@
     &__recentPosts{
         height: 348px;
         width: 276px;
+        @media only screen and (max-width: 479px) {
+            width: 230px;
+            
+        }
         &_caption{
             font-size: 24px;
             font-family: "Raleway";
@@ -957,6 +1250,10 @@
             align-items: flex-start;
             width: 276px;
             height: 99px;
+            @media only screen and (max-width: 479px) {
+                width: 230px;
+                
+            }
             &-date{
                 font-size: 12px;
                 font-family: "Montserrat";
@@ -987,6 +1284,10 @@
     &__twitter{
         height: 348px;
         width: 276px;
+        @media only screen and (max-width: 479px) {
+            width: 230px;
+            
+        }
         &_caption{
             font-size: 24px;
             font-family: "Raleway";
@@ -1005,6 +1306,10 @@
             align-items: flex-start;
             width: 276px;
             height: 99px;
+            @media only screen and (max-width: 479px) {
+                width: 230px;
+                
+            }
             &-text{
                 font-size: 14px;
                 font-family: "Montserrat";
@@ -1042,6 +1347,10 @@
     &__widget{
         height: 348px;
         width: 271px;
+        @media only screen and (max-width: 479px) {
+            width: 230px;
+            
+        }
         &_caption{
             font-size: 24px;
             font-family: "Raleway";
@@ -1052,7 +1361,7 @@
         }
         &_gallery{
             margin-top: 10px;
-            height: 207px;
+            min-height: 207px;
             width: 271px;
             display: flex;
             flex-direction: row;
@@ -1060,31 +1369,47 @@
             justify-content: space-between;
             align-items: flex-start;
             align-content:space-between;
+            @media only screen and (max-width: 479px) {
+                width: 230px;
+            }
+            
             &-doublePhone{
                 background: url('doublePhone.png') no-repeat;
                 width: 130px;
                 height: 98px;
+                @media only screen and (max-width: 479px) {
+                    width: 110px;
+                }
             }
             &-paper{
                 background: url('paper.png') no-repeat;
                 width: 130px;
                 height: 98px;
+                @media only screen and (max-width: 479px) {
+                    width: 110px;
+                }
             }
             &-smallJournal{
                 background: url('smallJournal.png') no-repeat;
                 width: 130px;
                 height: 98px;
+                @media only screen and (max-width: 479px) {
+                    width: 110px;
+                }
             }
             &-pinkIcon{
                 background: url('pinkIcon.png') no-repeat;
                 width: 130px;
                 height: 98px;
+                @media only screen and (max-width: 479px) {
+                    width: 110px;
+                }
             }
         }
     }
 }
 .lowerFooter{
-    height: 112px;
+    min-height: 112px;
     width:1234px;
     display: flex;
     flex-direction: row;
@@ -1092,6 +1417,14 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    @media screen and (max-width: 800px) {
+        width: 760px;
+       
+    }
+    @media only screen and (max-width: 479px) {
+        width:479px;
+        margin: 0 5px;
+    }
     &__wrapper{
         display: flex;
         flex-direction: row;
@@ -1101,16 +1434,27 @@
         align-items: center;
         background: rgb(17, 17, 17);
         width:100%;
-        height: 112px;
+        min-height: 112px;
+        @media only screen and (max-width: 479px) {
+            width:479px;
+            
+        }
+        
     }
     &__contact{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-content: center;
         align-items: center;
         width: 400px;
+        @media only screen and (max-width: 479px) {
+            width:200px;
+            flex-direction: column;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
         &_items{
             font-size: 13px;
             font-family: "Montserrat";
@@ -1126,11 +1470,17 @@
             border-left:1px solid rgb(29, 29, 29);
             width:111px;
             text-align: center;
+            @media only screen and (max-width: 479px) {
+                text-align: left;
+            }
         }
         &_items:nth-child(3){
             border-right:1px solid rgb(29, 29, 29);
             width:54px;
             text-align: center;
+            @media only screen and (max-width: 479px) {
+                text-align: left;
+            }
         }
         &_items:hover{
             color: rgb(199, 178, 153); 
@@ -1140,10 +1490,15 @@
         width: 321px;
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-content: center;
         align-items: center;
+        @media only screen and (max-width: 479px) {
+            width:200px;
+            flex-direction: column;
+            
+        }
         &_items{
             font-size: 13px;
             font-family: "Montserrat";
