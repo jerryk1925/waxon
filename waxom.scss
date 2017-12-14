@@ -8,11 +8,11 @@
     height: 136px;
     
     @media only screen and (max-width: 479px) {
-        width: 479px;
+        width: 100%;
         max-height: 80px;
     }
     @media only screen and (orientation: landscape) and(min-width: 500px)and (max-width: 800px) {
-        width: 800px;
+        width: 100%;
         min-height: 100px;
     }
     
@@ -30,11 +30,11 @@
         z-index: 10;
        
         @media only screen and (max-width: 479px) {
-            width: 479px;
+            width: 100%;
             max-height: 80px;
         }
         @media only screen and (orientation: landscape) and (max-width: 800px) {
-            width: 800px;
+            width: 100%;
             min-height: 100px;
         }
     }
@@ -123,11 +123,11 @@
     width: 1234px;
     
     @media only screen and (max-width: 479px) {
-        width: 479px;
+        width: 100%;
         height: 700px;
     }
     @media only screen and (orientation: landscape) and (max-width: 800px) {
-        width: 800px;
+        width: 100%;
         height: 700px;
     }
 
@@ -146,11 +146,11 @@
         background-position: center;
       
         @media only screen and (max-width: 479px) {
-            width: 479px;
+            width: 100%;
             height: 700px;
         }
         @media only screen and (orientation: landscape) and (max-width: 800px) {
-            width: 800px;
+            width: 100%;
             height: 700px;
         }
         
@@ -182,7 +182,8 @@
         width: 560px;
         @media only screen and (max-width: 479px) {
             font-size: 16px;
-            width: 400px;
+            width: 100%;
+            padding: 0 20px;
         }
     }
     &__button {
@@ -212,7 +213,7 @@
     height: 424px;
     
     @media only screen and (max-width: 479px) {
-        width:460px;
+        width:100%;
         height: 950px;
     }
     @media only screen and (orientation: landscape) and (max-width: 800px) {
@@ -230,7 +231,7 @@
         height: 424px;
        
         @media only screen and (max-width: 479px) {
-            width:460px;
+            width:100%;
             height: 950px;
         }
         @media only screen and (orientation: landscape) and (max-width: 800px) {
@@ -326,7 +327,7 @@
         width: 760px;
     }
     @media only screen and (max-width: 479px) {
-        width:479px;
+        width:100%;
         
     }
 
@@ -345,19 +346,23 @@
             width: 800px;
         }
         @media only screen and (max-width: 479px) {
-            width:479px;
+            width:100%;
             
         }
     }
     &__banner{
         margin-left: 30px;
+        @media only screen and (max-width: 479px) {
+            margin: 0;
+          padding: 0 20px;
+        }
         &_caption{
             font-size: 28px;
             font-family: "Raleway";
             color: rgb(199, 178, 153);
             @media only screen and (max-width: 479px) {
                 font-size: 20px;
-                
+              
             }
         }
         &_text{
@@ -372,7 +377,10 @@
     }
     &__button{
         margin-right: 30px;
-        
+        @media only screen and (max-width: 479px) {
+            margin: 0;
+         padding-right:  20px;
+        }
         &_item{
             font-weight: bold;
             font-family: 'Raleway', sans-serif;
@@ -383,9 +391,9 @@
             border-radius: 4px;
             color: white;
             box-shadow: 0 3px 0 rgb(105, 92, 83); 
-                
-                
-            
+            @media only screen and (max-width: 479px) {
+               width: 150px;
+            } 
         }
     }
 }
@@ -403,7 +411,7 @@
         height: 1500px;
     }
     @media only screen and (max-width: 479px) {
-        width:479px;
+        width:100%;
         height: 2500px;
         
     }
@@ -417,7 +425,7 @@
         width: 100%;
         min-height:1163px;
         @media only screen and (max-width: 479px) {
-            width:479px;
+            width:100%;
             height: 2500px;
         }
         @media only screen and (orientation: landscape) and (max-width: 800px) {
@@ -442,7 +450,8 @@
             color: rgb(140, 140, 140);
             @media only screen and (max-width: 479px) {
                 font-size: 16px;
-                width: 300px;
+                width:100%;
+                padding: 0 20px;
             }
         }
     }
@@ -456,8 +465,9 @@
         align-items: center;
         align-content:space-between;
         @media only screen and (max-width: 479px) {
-            width: 400px;
+            width:100%;
             height: 80px;
+           
             
         }
         
@@ -501,7 +511,8 @@
         align-items: flex-start;
         align-content:space-between;
         @media only screen and (max-width: 479px) {
-            width: 435px;  
+            width: 100%;  
+           padding: 0;
         }
 
         @media only screen and (orientation: landscape) and (max-width: 800px) {
@@ -520,11 +531,19 @@
         &_see{
             height: 338px;
             width: 370px;
+            @media only screen and (max-width: 479px) {
+                width: 100%;  
+               
+            }
             
             &-text{
                 padding: 30px;
                 height: 101px;
                 background-color: rgb(251, 250, 248);
+                @media only screen and (max-width: 479px) {
+                    width: 100%;  
+                   
+                }
                 &-caption{
                     font-size: 20px;
                     font-family: "Raleway";
@@ -544,6 +563,10 @@
                 background: url('phote.png') no-repeat;
                 width: 370px;
                 height: 237px;
+                @media only screen and (max-width: 479px) {
+                    width: 100%;  
+                   
+                }
                 
             }
         }
@@ -552,7 +575,10 @@
                 background: url('book.png') no-repeat;
                 width: 370px;
                 height: 237px;
-                
+                @media only screen and (max-width: 479px) {
+                    width: 100%;  
+                   
+                }
             }
         }
         &_mount{
@@ -560,6 +586,10 @@
                 background: url('mount.png') no-repeat;
                 width: 370px;
                 height: 237px;
+                @media only screen and (max-width: 479px) {
+                    width: 100%;  
+                   
+                }
             }
         }
         &_birds{
@@ -567,6 +597,10 @@
                 background: url('birds.png') no-repeat;
                 width: 370px;
                 height: 237px;
+                @media only screen and (max-width: 479px) {
+                    width: 100%;  
+                   
+                }
             }
         }
         &_journal{
@@ -574,6 +608,10 @@
                 background: url('journal.png') no-repeat;
                 width: 370px;
                 height: 237px;
+                @media only screen and (max-width: 479px) {
+                    width: 100%;  
+                   
+                }
             }
         }
         &_see{
@@ -582,6 +620,10 @@
                 width: 370px;
                 height: 237px;
                 filter: grayscale(100%);
+                @media only screen and (max-width: 479px) {
+                    width: 100%;  
+                   
+                }
             }
         }
         &_phone:hover &_phone-photo{
@@ -676,7 +718,7 @@
         height: 500px;
     }
     @media only screen and (max-width: 479px) {
-        width:479px;
+        width:100%;
         height: 500px;
     }
     &__wrapper{
@@ -692,7 +734,7 @@
         background-size: cover;
         background-position: center;
         @media only screen and (max-width: 479px) {
-            width:479px;
+            width:100%;
             height: 500px;
             
         }
@@ -711,6 +753,10 @@
         font-size: 30px;
         font-family: "Raleway";
         color: rgb(255, 255, 255);
+        @media only screen and (max-width: 479px) {
+            font-size: 28px;
+
+        }
     }
     &__text{
         line-height: 1.7;
@@ -720,8 +766,8 @@
         color: rgb(255, 255, 255);
         width: 580px;
         @media only screen and (max-width: 479px) {
-            width:440px;
-            
+            width:100%;
+            padding: 0 20px;
         }
     }
     &__time{
@@ -747,7 +793,7 @@
        
     }
     @media only screen and (max-width: 479px) {
-        width:479px;
+        width:100%;
         
         
     }
@@ -762,7 +808,7 @@
         min-height: 695px;
         width: 100%;
         @media only screen and (max-width: 479px) {
-            width:479px;
+            width:100%;
   
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
@@ -774,8 +820,9 @@
         height: 695px;
         width: 534px;
         @media only screen and (max-width: 479px) {
-            width:479px;
-           
+            width:100%;
+            background: url('bigphone800.png') no-repeat;
+            padding: 0 20px;
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 400px;
@@ -787,7 +834,7 @@
     &__aboutPhone{
         width: 700px;
         @media only screen and (max-width: 479px) {
-            width:479px;
+            width:100%;
           
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
@@ -802,7 +849,7 @@
             font-weight: bold;
             @media only screen and (max-width: 479px) {
                 text-align: center;
-                 
+                 padding: 0 20px;
             }
             @media screen and (orientation: landscape) and (max-width: 800px) {
                 font-size: 26px;
@@ -816,7 +863,8 @@
             line-height: 1.5;
             @media only screen and (max-width: 479px) {
                 font-size: 15px;
-               margin:  0 20px;
+                width:100%;
+                padding: 0 20px;
             }
             @media screen and (orientation: landscape) and (max-width: 800px) {
                 font-size: 14px;
@@ -836,8 +884,8 @@
             
             
             @media only screen and (max-width: 479px) {
-                width: 459px;
-                margin-left:  10px ;
+                width: 100%;
+                padding: 0 20px;
                 
             }
             @media screen and (orientation: landscape) and (max-width: 800px) {
@@ -855,7 +903,7 @@
                 align-items: center;
                 
                 @media only screen and (max-width: 479px) {
-                    width: 479px;
+                    width: 100%;
                   
                 }
                 @media screen and (orientation: landscape) and (max-width: 800px) {
@@ -911,7 +959,7 @@
        
     }
     @media only screen and (max-width: 479px) {
-        width:479px;
+        width:100%;
         margin: 0 30px;
         display: flex;
         flex-direction: row;
@@ -933,7 +981,7 @@
         align-content: center;
         align-items: center;
         @media only screen and (max-width: 479px) {
-            width:479px;
+            width:100%;
             
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
@@ -986,7 +1034,7 @@
         align-content: center;
         align-items: center;
         @media only screen and (max-width: 479px) {
-            width:180px;
+            width:50%;
             
         }
 
@@ -1019,12 +1067,12 @@
     align-content: center;
     align-items: center;
     @media screen and (orientation: landscape) and (max-width: 800px) {
-        width: 800px;
+        width:100%;
         height:1100px;
        
     }
     @media only screen and (max-width: 479px) {
-        width:479px;
+        width:100%;
         height:1400px;
         
     }
@@ -1038,11 +1086,11 @@
         width: 100%;
         min-height: 754px;
         @media only screen and (max-width: 479px) {
-            width:479px;
+            width:100%;
             height:1400px;
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
-            width: 800px;
+            width:100%;
             height:1100px;
            
         }
@@ -1066,7 +1114,8 @@
         font-family: "Montserrat";
         color: rgb(140, 140, 140);
         @media only screen and (max-width: 479px) {
-            width: 420px;
+            width:100%;
+            padding: 0 20px;
             
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
@@ -1085,8 +1134,9 @@
         align-content: center;
         align-items: center;
         @media only screen and (max-width: 479px) {
-            width: 450px;
+            width:100%;
             height: 1200px;
+         
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 800px;
@@ -1096,10 +1146,18 @@
         &_men, &_women, &_ship{
             width: 370px;
             height: 395px;
+            @media only screen and (max-width: 479px) {
+                width:100%;
+            }
             &_text{
                 padding: 30px;
                 background: rgb(255, 255, 255);
                 height: 175px;
+                @media only screen and (max-width: 479px) {
+                    width:100%;
+                   
+                   
+                }
                 &-caption{
                     font-size: 20px;
                     font-family: "Raleway";
@@ -1130,6 +1188,11 @@
                 background: url('date.png') no-repeat 20px 20px,url('men.png') no-repeat;
                 width: 370px;
                 height: 220px;
+                @media only screen and (max-width: 479px) {
+                    width:100%;
+                   
+                   
+                }
             }
         }
         &_women{
@@ -1137,6 +1200,11 @@
                 background: url('date.png') no-repeat 20px 20px,url('women.png') no-repeat;
                 width: 370px;
                 height: 220px;
+                @media only screen and (max-width: 479px) {
+                    width:100%;
+                   
+                   
+                }
             }
         }
         &_ship{
@@ -1144,6 +1212,11 @@
                 background: url('date.png') no-repeat 20px 20px,url('ship.png') no-repeat;
                 width: 370px;
                 height: 220px;
+                @media only screen and (max-width: 479px) {
+                    width:100%;
+                   
+                   
+                }
             }
         }
         &_men:hover &_men_text,
@@ -1191,12 +1264,12 @@
     align-content: space-around;
     align-items: center;
     @media screen and (orientation: landscape) and (max-width: 800px) {
-        width: 800px;
+        width:100%;
        
     }
     @media only screen and (max-width: 479px) {
-        width:479px;
-        
+        width:100%;
+        min-height: 750px;
     }
     &__wrapper{
         display: flex;
@@ -1211,11 +1284,11 @@
         background-size: cover;
         background-position: center;
         @media only screen and (max-width: 479px) {
-            width:479px;
-            
+            width:100%;
+            min-height: 750px;
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
-            width: 800px;
+            width:100%;
             
            
         }
@@ -1224,6 +1297,7 @@
         background: url('barber.png') no-repeat;
         width: 210px ;
         height: 127px;
+        
     }
     &__delicious{
         background: url('delicious.png') no-repeat;
@@ -1256,9 +1330,10 @@
         margin: 0 30px;
     }
     @media only screen and (max-width: 479px) {
-        width:479px;
-        min-height: 760px;
-        margin: 0 5px;
+        width:100%;
+        min-height: 800px;
+        padding: 0 10px;
+        
     }
     &__wrapper{
         background: rgb(25, 25, 25);
@@ -1271,8 +1346,8 @@
         width: 100%;
         min-height: 508px;
         @media only screen and (max-width: 479px) {
-            width:479px;
-            min-height: 760px;
+            width:100%;
+            min-height: 800px;
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 800px;
@@ -1280,11 +1355,11 @@
         }
     }
     &__aboutWaxon{
-        height: 348px;
+        min-height: 348px;
         width: 260px;
         @media only screen and (max-width: 479px) {
-            width: 230px;
-            
+            width:45%;
+            min-height: 360px;
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 260px;
@@ -1317,11 +1392,11 @@
         color: rgb(199, 178, 153);
     }
     &__recentPosts{
-        height: 348px;
+        min-height: 348px;
         width: 276px;
         @media only screen and (max-width: 479px) {
-            width: 230px;
-            
+            width:45%;
+            min-height: 360px;
         }
         &_caption{
             font-size: 24px;
@@ -1331,6 +1406,10 @@
 
             vertical-align: middle;
             line-height: 56px;
+            @media only screen and (max-width: 479px) {
+                font-size: 20px;
+                
+            }
         }
         &_post{
             display: flex;
@@ -1340,10 +1419,10 @@
             align-content: stretch;
             align-items: flex-start;
             width: 276px;
-            height: 99px;
+            min-height: 99px;
             @media only screen and (max-width: 479px) {
-                width: 230px;
-                
+                width:100%;
+                min-height: 99px;
             }
             &-date{
                 font-size: 12px;
@@ -1373,11 +1452,11 @@
         }
     }
     &__twitter{
-        height: 348px;
+        min-height: 348px;
         width: 276px;
         @media only screen and (max-width: 479px) {
-            width: 230px;
-            
+            width:45%;
+            min-height: 360px; 
         }
         &_caption{
             font-size: 24px;
@@ -1387,6 +1466,10 @@
 
             vertical-align: middle;
             line-height: 56px;
+            @media only screen and (max-width: 479px) {
+                font-size: 20px;
+                
+            }
         }
         &_twett{
             display: flex;
@@ -1396,10 +1479,10 @@
             align-content: stretch;
             align-items: flex-start;
             width: 276px;
-            height: 99px;
+            min-height: 99px;
             @media only screen and (max-width: 479px) {
-                width: 230px;
-                
+                width: 100%;
+                min-height: 99px;
             }
             &-text{
                 font-size: 14px;
@@ -1432,15 +1515,19 @@
             height: 119px;
             border-top: 1px solid  rgb(29, 29, 29);
             border-bottom:1px solid  rgb(29,29, 29);
+            @media only screen and (max-width: 479px) {
+               
+                min-height: 140px;
+            }
             
         }
     }
     &__widget{
-        height: 348px;
+        min-height: 348px;
         width: 271px;
         @media only screen and (max-width: 479px) {
-            width: 230px;
-            
+            width: 45%;
+            min-height: 395px;
         }
         &_caption{
             font-size: 24px;
@@ -1449,6 +1536,10 @@
             font-weight: bold;
             vertical-align: middle;
             line-height: 56px;
+            @media only screen and (max-width: 479px) {
+                font-size: 20px;
+                
+            }
         }
         &_gallery{
             margin-top: 10px;
@@ -1461,7 +1552,7 @@
             align-items: flex-start;
             align-content:space-between;
             @media only screen and (max-width: 479px) {
-                width: 230px;
+                width: 100%;
             }
             
             &-doublePhone{
@@ -1469,7 +1560,7 @@
                 width: 130px;
                 height: 98px;
                 @media only screen and (max-width: 479px) {
-                    width: 110px;
+                    width: 45%;
                 }
             }
             &-paper{
@@ -1477,7 +1568,7 @@
                 width: 130px;
                 height: 98px;
                 @media only screen and (max-width: 479px) {
-                    width: 110px;
+                    width: 45%;
                 }
             }
             &-smallJournal{
@@ -1485,7 +1576,7 @@
                 width: 130px;
                 height: 98px;
                 @media only screen and (max-width: 479px) {
-                    width: 110px;
+                    width: 45%;
                 }
             }
             &-pinkIcon{
@@ -1493,7 +1584,7 @@
                 width: 130px;
                 height: 98px;
                 @media only screen and (max-width: 479px) {
-                    width: 110px;
+                    width: 45%;
                 }
             }
         }
@@ -1509,12 +1600,13 @@
     align-content: center;
     align-items: center;
     @media screen and (orientation: landscape) and (max-width: 800px) {
-        width: 800px;
+        width:100%;
        margin: 0 30px;
     }
     @media only screen and (max-width: 479px) {
-        width:479px;
-        margin: 0 5px;
+        width:100%;
+        padding: 0 20px;
+        
     }
     &__wrapper{
         display: flex;
@@ -1527,8 +1619,8 @@
         width:100%;
         min-height: 112px;
         @media only screen and (max-width: 479px) {
-            width:479px;
-            
+            width:100%;
+           
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 800px;
@@ -1545,7 +1637,7 @@
         align-items: center;
         width: 400px;
         @media only screen and (max-width: 479px) {
-            width:200px;
+            width:45%;
             flex-direction: column;
             align-content: flex-start;
             align-items: flex-start;
@@ -1606,7 +1698,7 @@
         align-content: center;
         align-items: center;
         @media only screen and (max-width: 479px) {
-            width:200px;
+            width: 45%;
             flex-direction: column;
             
         }
@@ -1637,6 +1729,11 @@
             @media screen and (orientation: landscape) and (max-width: 800px) {
                 border: none;
                 text-align: left;
+            }
+            @media only screen and (max-width: 479px) {
+                border: none;
+                text-align: left;
+                
             }
         }
         &_items:hover{

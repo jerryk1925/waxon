@@ -10,14 +10,14 @@
 
 @media only screen and (max-width: 479px) {
   .header {
-    width: 479px;
+    width: 100%;
     max-height: 80px;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 500px) and (max-width: 800px) {
   .header {
-    width: 800px;
+    width: 100%;
     min-height: 100px;
   }
 }
@@ -38,14 +38,14 @@
 
 @media only screen and (max-width: 479px) {
   .header__wrapper {
-    width: 479px;
+    width: 100%;
     max-height: 80px;
   }
 }
 
 @media only screen and (orientation: landscape) and (max-width: 800px) {
   .header__wrapper {
-    width: 800px;
+    width: 100%;
     min-height: 100px;
   }
 }
@@ -152,14 +152,14 @@
 
 @media only screen and (max-width: 479px) {
   .portfolio {
-    width: 479px;
+    width: 100%;
     height: 700px;
   }
 }
 
 @media only screen and (orientation: landscape) and (max-width: 800px) {
   .portfolio {
-    width: 800px;
+    width: 100%;
     height: 700px;
   }
 }
@@ -180,14 +180,14 @@
 
 @media only screen and (max-width: 479px) {
   .portfolio__wrapper {
-    width: 479px;
+    width: 100%;
     height: 700px;
   }
 }
 
 @media only screen and (orientation: landscape) and (max-width: 800px) {
   .portfolio__wrapper {
-    width: 800px;
+    width: 100%;
     height: 700px;
   }
 }
@@ -230,7 +230,8 @@
 @media only screen and (max-width: 479px) {
   .portfolio__text {
     font-size: 16px;
-    width: 400px;
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
@@ -264,7 +265,7 @@
 
 @media only screen and (max-width: 479px) {
   .aboutus {
-    width: 460px;
+    width: 100%;
     height: 950px;
   }
 }
@@ -289,7 +290,7 @@
 
 @media only screen and (max-width: 479px) {
   .aboutus__wrapper {
-    width: 460px;
+    width: 100%;
     height: 950px;
   }
 }
@@ -388,7 +389,7 @@
 
 @media only screen and (max-width: 479px) {
   .wordPress {
-    width: 479px;
+    width: 100%;
   }
 }
 
@@ -413,12 +414,19 @@
 
 @media only screen and (max-width: 479px) {
   .wordPress__wrapper {
-    width: 479px;
+    width: 100%;
   }
 }
 
 .wordPress__banner {
   margin-left: 30px;
+}
+
+@media only screen and (max-width: 479px) {
+  .wordPress__banner {
+    margin: 0;
+    padding: 0 20px;
+  }
 }
 
 .wordPress__banner_caption {
@@ -449,6 +457,13 @@
   margin-right: 30px;
 }
 
+@media only screen and (max-width: 479px) {
+  .wordPress__button {
+    margin: 0;
+    padding-right: 20px;
+  }
+}
+
 .wordPress__button_item {
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
@@ -459,6 +474,12 @@
   border-radius: 4px;
   color: white;
   box-shadow: 0 3px 0 #695c53;
+}
+
+@media only screen and (max-width: 479px) {
+  .wordPress__button_item {
+    width: 150px;
+  }
 }
 
 .projects {
@@ -481,7 +502,7 @@
 
 @media only screen and (max-width: 479px) {
   .projects {
-    width: 479px;
+    width: 100%;
     height: 2500px;
   }
 }
@@ -499,7 +520,7 @@
 
 @media only screen and (max-width: 479px) {
   .projects__wrapper {
-    width: 479px;
+    width: 100%;
     height: 2500px;
   }
 }
@@ -533,7 +554,8 @@
 @media only screen and (max-width: 479px) {
   .projects__title_paragraph {
     font-size: 16px;
-    width: 300px;
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
@@ -550,7 +572,7 @@
 
 @media only screen and (max-width: 479px) {
   .projects__menu {
-    width: 400px;
+    width: 100%;
     height: 80px;
   }
 }
@@ -599,7 +621,8 @@
 
 @media only screen and (max-width: 479px) {
   .projects__catalog {
-    width: 435px;
+    width: 100%;
+    padding: 0;
   }
 }
 
@@ -616,10 +639,22 @@
   width: 370px;
 }
 
+@media only screen and (max-width: 479px) {
+  .projects__catalog_phone, .projects__catalog_mount, .projects__catalog_book, .projects__catalog_birds, .projects__catalog_journal, .projects__catalog_see {
+    width: 100%;
+  }
+}
+
 .projects__catalog_phone-text, .projects__catalog_mount-text, .projects__catalog_book-text, .projects__catalog_birds-text, .projects__catalog_journal-text, .projects__catalog_see-text {
   padding: 30px;
   height: 101px;
   background-color: #fbfaf8;
+}
+
+@media only screen and (max-width: 479px) {
+  .projects__catalog_phone-text, .projects__catalog_mount-text, .projects__catalog_book-text, .projects__catalog_birds-text, .projects__catalog_journal-text, .projects__catalog_see-text {
+    width: 100%;
+  }
 }
 
 .projects__catalog_phone-text-caption, .projects__catalog_mount-text-caption, .projects__catalog_book-text-caption, .projects__catalog_birds-text-caption, .projects__catalog_journal-text-caption, .projects__catalog_see-text-caption {
@@ -641,10 +676,22 @@
   height: 237px;
 }
 
+@media only screen and (max-width: 479px) {
+  .projects__catalog_phone-photo {
+    width: 100%;
+  }
+}
+
 .projects__catalog_book-photo {
   background: url("book.png") no-repeat;
   width: 370px;
   height: 237px;
+}
+
+@media only screen and (max-width: 479px) {
+  .projects__catalog_book-photo {
+    width: 100%;
+  }
 }
 
 .projects__catalog_mount-photo {
@@ -653,10 +700,22 @@
   height: 237px;
 }
 
+@media only screen and (max-width: 479px) {
+  .projects__catalog_mount-photo {
+    width: 100%;
+  }
+}
+
 .projects__catalog_birds-photo {
   background: url("birds.png") no-repeat;
   width: 370px;
   height: 237px;
+}
+
+@media only screen and (max-width: 479px) {
+  .projects__catalog_birds-photo {
+    width: 100%;
+  }
 }
 
 .projects__catalog_journal-photo {
@@ -665,11 +724,23 @@
   height: 237px;
 }
 
+@media only screen and (max-width: 479px) {
+  .projects__catalog_journal-photo {
+    width: 100%;
+  }
+}
+
 .projects__catalog_see-photo {
   background: url("see.png") no-repeat;
   width: 370px;
   height: 237px;
   filter: grayscale(100%);
+}
+
+@media only screen and (max-width: 479px) {
+  .projects__catalog_see-photo {
+    width: 100%;
+  }
 }
 
 .projects__catalog_phone:hover .projects__catalog_phone-photo {
@@ -760,7 +831,7 @@
 
 @media only screen and (max-width: 479px) {
   .video {
-    width: 479px;
+    width: 100%;
     height: 500px;
   }
 }
@@ -781,7 +852,7 @@
 
 @media only screen and (max-width: 479px) {
   .video__wrapper {
-    width: 479px;
+    width: 100%;
     height: 500px;
   }
 }
@@ -806,6 +877,12 @@
   color: white;
 }
 
+@media only screen and (max-width: 479px) {
+  .video__caption {
+    font-size: 28px;
+  }
+}
+
 .video__text {
   line-height: 1.7;
   text-align: center;
@@ -817,7 +894,8 @@
 
 @media only screen and (max-width: 479px) {
   .video__text {
-    width: 440px;
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
@@ -848,7 +926,7 @@
 
 @media only screen and (max-width: 479px) {
   .mobileDevices {
-    width: 479px;
+    width: 100%;
   }
 }
 
@@ -866,7 +944,7 @@
 
 @media only screen and (max-width: 479px) {
   .mobileDevices__wrapper {
-    width: 479px;
+    width: 100%;
   }
 }
 
@@ -884,7 +962,9 @@
 
 @media only screen and (max-width: 479px) {
   .mobileDevices__imagePhone {
-    width: 479px;
+    width: 100%;
+    background: url("bigphone800.png") no-repeat;
+    padding: 0 20px;
   }
 }
 
@@ -901,7 +981,7 @@
 
 @media only screen and (max-width: 479px) {
   .mobileDevices__aboutPhone {
-    width: 479px;
+    width: 100%;
   }
 }
 
@@ -922,6 +1002,7 @@
 @media only screen and (max-width: 479px) {
   .mobileDevices__aboutPhone_caption {
     text-align: center;
+    padding: 0 20px;
   }
 }
 
@@ -941,7 +1022,8 @@
 @media only screen and (max-width: 479px) {
   .mobileDevices__aboutPhone_text {
     font-size: 15px;
-    margin: 0 20px;
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
@@ -965,8 +1047,8 @@
 
 @media only screen and (max-width: 479px) {
   .mobileDevices__aboutPhone_list {
-    width: 459px;
-    margin-left: 10px;
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
@@ -989,7 +1071,7 @@
 
 @media only screen and (max-width: 479px) {
   .mobileDevices__aboutPhone_list-item {
-    width: 479px;
+    width: 100%;
   }
 }
 
@@ -1044,7 +1126,7 @@
 
 @media only screen and (max-width: 479px) {
   .statics {
-    width: 479px;
+    width: 100%;
     margin: 0 30px;
     display: flex;
     flex-direction: row;
@@ -1070,7 +1152,7 @@
 
 @media only screen and (max-width: 479px) {
   .statics__wrapper {
-    width: 479px;
+    width: 100%;
   }
 }
 
@@ -1122,7 +1204,7 @@
 
 @media only screen and (max-width: 479px) {
   .statics__clients, .statics__coffe, .statics__blogPosts, .statics__likes, .statics__launch {
-    width: 180px;
+    width: 50%;
   }
 }
 
@@ -1159,14 +1241,14 @@
 
 @media screen and (orientation: landscape) and (max-width: 800px) {
   .recentPosts {
-    width: 800px;
+    width: 100%;
     height: 1100px;
   }
 }
 
 @media only screen and (max-width: 479px) {
   .recentPosts {
-    width: 479px;
+    width: 100%;
     height: 1400px;
   }
 }
@@ -1184,14 +1266,14 @@
 
 @media only screen and (max-width: 479px) {
   .recentPosts__wrapper {
-    width: 479px;
+    width: 100%;
     height: 1400px;
   }
 }
 
 @media screen and (orientation: landscape) and (max-width: 800px) {
   .recentPosts__wrapper {
-    width: 800px;
+    width: 100%;
     height: 1100px;
   }
 }
@@ -1219,7 +1301,8 @@
 
 @media only screen and (max-width: 479px) {
   .recentPosts__text {
-    width: 420px;
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
@@ -1242,7 +1325,7 @@
 
 @media only screen and (max-width: 479px) {
   .recentPosts__slaidImage {
-    width: 450px;
+    width: 100%;
     height: 1200px;
   }
 }
@@ -1260,10 +1343,22 @@
   height: 395px;
 }
 
+@media only screen and (max-width: 479px) {
+  .recentPosts__slaidImage_men, .recentPosts__slaidImage_women, .recentPosts__slaidImage_ship {
+    width: 100%;
+  }
+}
+
 .recentPosts__slaidImage_men_text, .recentPosts__slaidImage_women_text, .recentPosts__slaidImage_ship_text {
   padding: 30px;
   background: white;
   height: 175px;
+}
+
+@media only screen and (max-width: 479px) {
+  .recentPosts__slaidImage_men_text, .recentPosts__slaidImage_women_text, .recentPosts__slaidImage_ship_text {
+    width: 100%;
+  }
 }
 
 .recentPosts__slaidImage_men_text-caption, .recentPosts__slaidImage_women_text-caption, .recentPosts__slaidImage_ship_text-caption {
@@ -1295,16 +1390,34 @@
   height: 220px;
 }
 
+@media only screen and (max-width: 479px) {
+  .recentPosts__slaidImage_men_image {
+    width: 100%;
+  }
+}
+
 .recentPosts__slaidImage_women_image {
   background: url("date.png") no-repeat 20px 20px, url("women.png") no-repeat;
   width: 370px;
   height: 220px;
 }
 
+@media only screen and (max-width: 479px) {
+  .recentPosts__slaidImage_women_image {
+    width: 100%;
+  }
+}
+
 .recentPosts__slaidImage_ship_image {
   background: url("date.png") no-repeat 20px 20px, url("ship.png") no-repeat;
   width: 370px;
   height: 220px;
+}
+
+@media only screen and (max-width: 479px) {
+  .recentPosts__slaidImage_ship_image {
+    width: 100%;
+  }
 }
 
 .recentPosts__slaidImage_men:hover .recentPosts__slaidImage_men_text,
@@ -1356,13 +1469,14 @@
 
 @media screen and (orientation: landscape) and (max-width: 800px) {
   .sponsors {
-    width: 800px;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 479px) {
   .sponsors {
-    width: 479px;
+    width: 100%;
+    min-height: 750px;
   }
 }
 
@@ -1382,13 +1496,14 @@
 
 @media only screen and (max-width: 479px) {
   .sponsors__wrapper {
-    width: 479px;
+    width: 100%;
+    min-height: 750px;
   }
 }
 
 @media screen and (orientation: landscape) and (max-width: 800px) {
   .sponsors__wrapper {
-    width: 800px;
+    width: 100%;
   }
 }
 
@@ -1436,9 +1551,9 @@
 
 @media only screen and (max-width: 479px) {
   .upperFooter {
-    width: 479px;
-    min-height: 760px;
-    margin: 0 5px;
+    width: 100%;
+    min-height: 800px;
+    padding: 0 10px;
   }
 }
 
@@ -1456,8 +1571,8 @@
 
 @media only screen and (max-width: 479px) {
   .upperFooter__wrapper {
-    width: 479px;
-    min-height: 760px;
+    width: 100%;
+    min-height: 800px;
   }
 }
 
@@ -1468,13 +1583,14 @@
 }
 
 .upperFooter__aboutWaxon {
-  height: 348px;
+  min-height: 348px;
   width: 260px;
 }
 
 @media only screen and (max-width: 479px) {
   .upperFooter__aboutWaxon {
-    width: 230px;
+    width: 45%;
+    min-height: 360px;
   }
 }
 
@@ -1513,13 +1629,14 @@
 }
 
 .upperFooter__recentPosts {
-  height: 348px;
+  min-height: 348px;
   width: 276px;
 }
 
 @media only screen and (max-width: 479px) {
   .upperFooter__recentPosts {
-    width: 230px;
+    width: 45%;
+    min-height: 360px;
   }
 }
 
@@ -1532,6 +1649,12 @@
   line-height: 56px;
 }
 
+@media only screen and (max-width: 479px) {
+  .upperFooter__recentPosts_caption {
+    font-size: 20px;
+  }
+}
+
 .upperFooter__recentPosts_post {
   display: flex;
   flex-direction: column;
@@ -1540,12 +1663,13 @@
   align-content: stretch;
   align-items: flex-start;
   width: 276px;
-  height: 99px;
+  min-height: 99px;
 }
 
 @media only screen and (max-width: 479px) {
   .upperFooter__recentPosts_post {
-    width: 230px;
+    width: 100%;
+    min-height: 99px;
   }
 }
 
@@ -1579,13 +1703,14 @@
 }
 
 .upperFooter__twitter {
-  height: 348px;
+  min-height: 348px;
   width: 276px;
 }
 
 @media only screen and (max-width: 479px) {
   .upperFooter__twitter {
-    width: 230px;
+    width: 45%;
+    min-height: 360px;
   }
 }
 
@@ -1598,6 +1723,12 @@
   line-height: 56px;
 }
 
+@media only screen and (max-width: 479px) {
+  .upperFooter__twitter_caption {
+    font-size: 20px;
+  }
+}
+
 .upperFooter__twitter_twett {
   display: flex;
   flex-direction: column;
@@ -1606,12 +1737,13 @@
   align-content: stretch;
   align-items: flex-start;
   width: 276px;
-  height: 99px;
+  min-height: 99px;
 }
 
 @media only screen and (max-width: 479px) {
   .upperFooter__twitter_twett {
-    width: 230px;
+    width: 100%;
+    min-height: 99px;
   }
 }
 
@@ -1653,14 +1785,21 @@
   border-bottom: 1px solid #1d1d1d;
 }
 
+@media only screen and (max-width: 479px) {
+  .upperFooter__twitter_twett:nth-child(3) {
+    min-height: 140px;
+  }
+}
+
 .upperFooter__widget {
-  height: 348px;
+  min-height: 348px;
   width: 271px;
 }
 
 @media only screen and (max-width: 479px) {
   .upperFooter__widget {
-    width: 230px;
+    width: 45%;
+    min-height: 395px;
   }
 }
 
@@ -1671,6 +1810,12 @@
   font-weight: bold;
   vertical-align: middle;
   line-height: 56px;
+}
+
+@media only screen and (max-width: 479px) {
+  .upperFooter__widget_caption {
+    font-size: 20px;
+  }
 }
 
 .upperFooter__widget_gallery {
@@ -1687,7 +1832,7 @@
 
 @media only screen and (max-width: 479px) {
   .upperFooter__widget_gallery {
-    width: 230px;
+    width: 100%;
   }
 }
 
@@ -1699,7 +1844,7 @@
 
 @media only screen and (max-width: 479px) {
   .upperFooter__widget_gallery-doublePhone {
-    width: 110px;
+    width: 45%;
   }
 }
 
@@ -1711,7 +1856,7 @@
 
 @media only screen and (max-width: 479px) {
   .upperFooter__widget_gallery-paper {
-    width: 110px;
+    width: 45%;
   }
 }
 
@@ -1723,7 +1868,7 @@
 
 @media only screen and (max-width: 479px) {
   .upperFooter__widget_gallery-smallJournal {
-    width: 110px;
+    width: 45%;
   }
 }
 
@@ -1735,7 +1880,7 @@
 
 @media only screen and (max-width: 479px) {
   .upperFooter__widget_gallery-pinkIcon {
-    width: 110px;
+    width: 45%;
   }
 }
 
@@ -1752,15 +1897,15 @@
 
 @media screen and (orientation: landscape) and (max-width: 800px) {
   .lowerFooter {
-    width: 800px;
+    width: 100%;
     margin: 0 30px;
   }
 }
 
 @media only screen and (max-width: 479px) {
   .lowerFooter {
-    width: 479px;
-    margin: 0 5px;
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
@@ -1778,7 +1923,7 @@
 
 @media only screen and (max-width: 479px) {
   .lowerFooter__wrapper {
-    width: 479px;
+    width: 100%;
   }
 }
 
@@ -1800,7 +1945,7 @@
 
 @media only screen and (max-width: 479px) {
   .lowerFooter__contact {
-    width: 200px;
+    width: 45%;
     flex-direction: column;
     align-content: flex-start;
     align-items: flex-start;
@@ -1885,7 +2030,7 @@
 
 @media only screen and (max-width: 479px) {
   .lowerFooter__developer {
-    width: 200px;
+    width: 45%;
     flex-direction: column;
   }
 }
@@ -1922,6 +2067,13 @@
 }
 
 @media screen and (orientation: landscape) and (max-width: 800px) {
+  .lowerFooter__developer_items:nth-child(2) {
+    border: none;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 479px) {
   .lowerFooter__developer_items:nth-child(2) {
     border: none;
     text-align: left;
