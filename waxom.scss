@@ -6,7 +6,6 @@
     align-items: center;
     width: 1234px;
     height: 136px;
-    
     @media only screen and (max-width: 479px) {
         width: 100%;
         max-height: 80px;
@@ -15,9 +14,8 @@
         width: 100%;
         min-height: 100px;
     }
-    
     &__wrapper {
-        background: rgba(25, 25, 25, 0.2)  ;     
+        background: rgba(25, 25, 25, 0.2);
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -25,10 +23,9 @@
         align-content: center;
         align-items: center;
         width: 100%;
-       height: 136px;
+        height: 136px;
         position: fixed;
         z-index: 10;
-       
         @media only screen and (max-width: 479px) {
             width: 100%;
             max-height: 80px;
@@ -43,13 +40,11 @@
         background: url('logoHeader.png') no-repeat;
         height: 56px;
         width: 184px;
-       
         @media only screen and (max-width: 479px) {
-            width:65px;
+            width: 65px;
         }
         @media only screen and (orientation: landscape) and (max-width: 800px) {
             width: 65px;
-            
         }
     }
     &__menu {
@@ -62,17 +57,15 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-       
         @media only screen and (max-width: 479px) {
             width: 479px;
             display: none;
         }
-        @media only screen and (orientation: landscape)  and (max-width: 800px) {
-            width:500px;
-            margin-left:50px;
+        @media only screen and (orientation: landscape) and (max-width: 800px) {
+            width: 500px;
+            margin-left: 50px;
             margin-right: 30px;
         }
-        
         &_item {
             &-link {
                 color: white;
@@ -91,9 +84,8 @@
         justify-content: space-between;
         height: 136px;
         width: 80px;
-        
         @media only screen and (max-width: 479px) {
-            width:50px;
+            width: 50px;
         }
         &_basket {
             background: url('cart.png') no-repeat;
@@ -102,16 +94,15 @@
             @media only screen and (max-width: 479px) {
                 display: none;
             }
-
         }
         &_search {
             background: url('search.png') no-repeat;
             height: 24px;
             width: 24px;
-            
         }
     }
 }
+
 .portfolio {
     display: flex;
     flex-direction: column;
@@ -121,7 +112,6 @@
     align-items: center;
     height: 1024px;
     width: 1234px;
-    
     @media only screen and (max-width: 479px) {
         width: 100%;
         height: 700px;
@@ -130,8 +120,6 @@
         width: 100%;
         height: 700px;
     }
-
-    
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -144,7 +132,6 @@
         width: 100%;
         background-size: cover;
         background-position: center;
-      
         @media only screen and (max-width: 479px) {
             width: 100%;
             height: 700px;
@@ -153,7 +140,6 @@
             width: 100%;
             height: 700px;
         }
-        
     }
     &__header {
         font-size: 36px;
@@ -203,7 +189,8 @@
         }
     }
 }
-.aboutus{
+
+.aboutus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -211,16 +198,15 @@
     align-items: center;
     width: 1234px;
     height: 424px;
-    
     @media only screen and (max-width: 479px) {
-        width:100%;
+        width: 100%;
         height: 950px;
     }
     @media only screen and (orientation: landscape) and (max-width: 800px) {
         width: 760px;
         height: 700px;
     }
-    &__wrapper{
+    &__wrapper {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -229,9 +215,8 @@
         align-items: center;
         width: 100%;
         height: 424px;
-       
         @media only screen and (max-width: 479px) {
-            width:100%;
+            width: 100%;
             height: 950px;
         }
         @media only screen and (orientation: landscape) and (max-width: 800px) {
@@ -242,22 +227,22 @@
     &__webapp,
     &__development,
     &__customization,
-    &__marketing{
+    &__marketing {
         width: 280px;
         text-align: center;
-        &_caption{
+        &_caption {
             font-size: 22px;
             font-family: "Raleway";
             font-weight: 550;
             line-height: 60px;
         }
-        &_text{
+        &_text {
             font-size: 14px;
             font-family: "Montserrat";
             color: rgb(140, 140, 140);
             line-height: 25px;
         }
-        &_line{
+        &_line {
             display: inline-block;
             text-align: center;
             height: 35px;
@@ -265,57 +250,53 @@
             border-bottom: 2px solid rgb(241, 238, 233);
         }
     }
-    &__webapp{
-        &_icon{
+    &__webapp {
+        &_icon {
             display: inline-block;
             background: url('web.png') no-repeat;
-            height:47px;
+            height: 47px;
             width: 46px;
         }
     }
-    &__development{
-        &_icon{
+    &__development {
+        &_icon {
             display: inline-block;
             background: url('develp.png') no-repeat;
             height: 40px;
             width: 44px;
-            
         }
     }
-    &__customization{
-        &_icon{
+    &__customization {
+        &_icon {
             display: inline-block;
             background: url('cust.png') no-repeat;
             height: 44px;
             width: 44px;
-            
         }
     }
-    &__marketing{
-        &_icon{
+    &__marketing {
+        &_icon {
             display: inline-block;
             background: url('mark.png') no-repeat;
             height: 36px;
             width: 51px;
-            
         }
     }
     &__webapp:hover &__webapp_caption,
     &__development:hover &__development_caption,
     &__customization:hover &__customization_caption,
-    &__marketing:hover &__marketing_caption{
+    &__marketing:hover &__marketing_caption {
         color: rgb(199, 178, 153);
-     
     }
     &__webapp:hover &__webapp_line,
     &__development:hover &__development_line,
     &__customization:hover &__customization_line,
-    &__marketing:hover &__marketing_line{
+    &__marketing:hover &__marketing_line {
         border-bottom: 2px solid rgb(199, 178, 153);
     }
-    
 }
-.wordPress{
+
+.wordPress {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -327,11 +308,9 @@
         width: 760px;
     }
     @media only screen and (max-width: 479px) {
-        width:100%;
-        
+        width: 100%;
     }
-
-    &__wrapper{
+    &__wrapper {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -340,48 +319,45 @@
         align-items: center;
         width: 100%;
         height: 150px;
-        background: #271e1b; 
-        background: -webkit-linear-gradient(left, #271e1b 0%,#473025 100%); 
+        background: #271e1b;
+        background: -webkit-linear-gradient(left, #271e1b 0%, #473025 100%);
         @media only screen and (orientation: landscape)and(max-width: 800px) {
             width: 800px;
         }
         @media only screen and (max-width: 479px) {
-            width:100%;
-            
+            width: 100%;
         }
     }
-    &__banner{
+    &__banner {
         margin-left: 30px;
         @media only screen and (max-width: 479px) {
             margin: 0;
-          padding: 0 20px;
+            padding: 0 20px;
         }
-        &_caption{
+        &_caption {
             font-size: 28px;
             font-family: "Raleway";
             color: rgb(199, 178, 153);
             @media only screen and (max-width: 479px) {
                 font-size: 20px;
-              
             }
         }
-        &_text{
+        &_text {
             font-size: 18px;
             font-family: "Montserrat";
             color: rgb(97, 88, 85);
             @media only screen and (max-width: 479px) {
                 font-size: 14px;
-                
             }
         }
     }
-    &__button{
+    &__button {
         margin-right: 30px;
         @media only screen and (max-width: 479px) {
             margin: 0;
-         padding-right:  20px;
+            padding-right: 20px;
         }
-        &_item{
+        &_item {
             font-weight: bold;
             font-family: 'Raleway', sans-serif;
             border: none;
@@ -390,14 +366,15 @@
             width: 170px;
             border-radius: 4px;
             color: white;
-            box-shadow: 0 3px 0 rgb(105, 92, 83); 
+            box-shadow: 0 3px 0 rgb(105, 92, 83);
             @media only screen and (max-width: 479px) {
-               width: 150px;
-            } 
+                width: 150px;
+            }
         }
     }
 }
-.projects{
+
+.projects {
     width: 1234px;
     min-height: 1163px;
     display: flex;
@@ -411,11 +388,10 @@
         height: 1500px;
     }
     @media only screen and (max-width: 479px) {
-        width:100%;
+        width: 100%;
         height: 2500px;
-        
     }
-    &__wrapper{
+    &__wrapper {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -423,9 +399,9 @@
         align-content: center;
         align-items: center;
         width: 100%;
-        min-height:1163px;
+        min-height: 1163px;
         @media only screen and (max-width: 479px) {
-            width:100%;
+            width: 100%;
             height: 2500px;
         }
         @media only screen and (orientation: landscape) and (max-width: 800px) {
@@ -433,16 +409,15 @@
             height: 1500px;
         }
     }
-    &__title{
+    &__title {
         text-align: center;
-        &_caption{ 
+        &_caption {
             font-weight: bold;
             font-size: 30px;
             font-family: "Raleway";
             color: rgb(85, 85, 85);
-           
         }
-        &_paragraph{
+        &_paragraph {
             margin: 20px 0;
             width: 700px;
             font-size: 16px;
@@ -450,12 +425,12 @@
             color: rgb(140, 140, 140);
             @media only screen and (max-width: 479px) {
                 font-size: 16px;
-                width:100%;
+                width: 100%;
                 padding: 0 20px;
             }
         }
     }
-    &__menu{
+    &__menu {
         height: 33px;
         width: 605px;
         display: flex;
@@ -463,45 +438,39 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        align-content:space-between;
+        align-content: space-between;
         @media only screen and (max-width: 479px) {
-            width:100%;
+            width: 100%;
             height: 80px;
-           
-            
         }
-        
-
-        &_item{
-            margin:  0 5px;
+        &_item {
+            margin: 0 5px;
             text-align: center;
             width: 120px;
             line-height: 33px;
             border: 2px solid rgb(248, 248, 248);
             border-radius: 3px;
-            &-link{
+            &-link {
                 font-weight: bold;
                 width: 120px;
                 font-size: 14px;
                 font-family: "Montserrat";
                 color: rgb(140, 140, 140);
                 text-decoration: none;
-                
             }
         }
-        &_item:nth-child(1){
+        &_item:nth-child(1) {
             width: 70px;
         }
-        &_item:hover{
-            background-color:rgb(153, 134, 117) ;
+        &_item:hover {
+            background-color: rgb(153, 134, 117);
         }
-        &_item:hover &_item-link{
+        &_item:hover &_item-link {
             color: white;
         }
-
     }
-    &__catalog{
-        padding:0  30px;
+    &__catalog {
+        padding: 0 30px;
         min-height: 703px;
         width: 1234px;
         display: flex;
@@ -509,188 +478,155 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
-        align-content:space-between;
+        align-content: space-between;
         @media only screen and (max-width: 479px) {
-            width: 100%;  
-           padding: 0;
+            width: 100%;
+            padding: 0;
         }
-
         @media only screen and (orientation: landscape) and (max-width: 800px) {
             width: 800px;
-           height: 1100px;
-           padding: 20px;
+            height: 1100px;
+            padding: 20px;
         }
-
-        	
-        
         &_phone,
         &_mount,
         &_book,
         &_birds,
         &_journal,
-        &_see{
+        &_see {
             height: 338px;
             width: 370px;
             @media only screen and (max-width: 479px) {
-                width: 100%;  
-               
+                width: 100%;
             }
-            
-            &-text{
+            &-text {
                 padding: 30px;
                 height: 101px;
                 background-color: rgb(251, 250, 248);
                 @media only screen and (max-width: 479px) {
-                    width: 100%;  
-                   
+                    width: 100%;
                 }
-                &-caption{
+                &-caption {
                     font-size: 20px;
                     font-family: "Raleway";
                     color: rgb(199, 178, 153);
                 }
-                &-namePhoto{
+                &-namePhoto {
                     padding-top: 8px;
                     font-size: 14px;
                     font-family: "Montserrat";
                     color: rgb(209, 209, 209)
                 }
             }
-
         }
-        &_phone{
-            &-photo{
+        &_phone {
+            &-photo {
                 background: url('phote.png') no-repeat;
                 width: 370px;
                 height: 237px;
                 @media only screen and (max-width: 479px) {
-                    width: 100%;  
-                   
+                    width: 100%;
                 }
-                
             }
         }
-        &_book{
-            &-photo{
+        &_book {
+            &-photo {
                 background: url('book.png') no-repeat;
                 width: 370px;
                 height: 237px;
                 @media only screen and (max-width: 479px) {
-                    width: 100%;  
-                   
+                    width: 100%;
                 }
             }
         }
-        &_mount{
-            &-photo{
+        &_mount {
+            &-photo {
                 background: url('mount.png') no-repeat;
                 width: 370px;
                 height: 237px;
                 @media only screen and (max-width: 479px) {
-                    width: 100%;  
-                   
+                    width: 100%;
                 }
             }
         }
-        &_birds{
-            &-photo{
+        &_birds {
+            &-photo {
                 background: url('birds.png') no-repeat;
                 width: 370px;
                 height: 237px;
                 @media only screen and (max-width: 479px) {
-                    width: 100%;  
-                   
+                    width: 100%;
                 }
             }
         }
-        &_journal{
-            &-photo{
+        &_journal {
+            &-photo {
                 background: url('journal.png') no-repeat;
                 width: 370px;
                 height: 237px;
                 @media only screen and (max-width: 479px) {
-                    width: 100%;  
-                   
+                    width: 100%;
                 }
             }
         }
-        &_see{
-            &-photo{
+        &_see {
+            &-photo {
                 background: url('see.png') no-repeat;
                 width: 370px;
                 height: 237px;
                 filter: grayscale(100%);
                 @media only screen and (max-width: 479px) {
-                    width: 100%;  
-                   
+                    width: 100%;
                 }
             }
         }
-        &_phone:hover &_phone-photo{
-            background: 
-            url('hover.png') no-repeat 50% 50%,
-            url('photeHover.png') no-repeat ; 
-           
+        &_phone:hover &_phone-photo {
+            background: url('hover.png') no-repeat 50% 50%, url('photeHover.png') no-repeat;
         }
-        &_mount:hover &_mount-photo{
-            background: 
-            url('hover.png') no-repeat 50% 50%,
-            url('mountHover.png') no-repeat ; 
-           
+        &_mount:hover &_mount-photo {
+            background: url('hover.png') no-repeat 50% 50%, url('mountHover.png') no-repeat;
         }
-        &_book:hover &_book-photo{
-            background: 
-            url('hover.png') no-repeat 50% 50%,
-            url('bookHover.png') no-repeat ; 
-           
+        &_book:hover &_book-photo {
+            background: url('hover.png') no-repeat 50% 50%, url('bookHover.png') no-repeat;
         }
-        &_birds:hover &_birds-photo{
-            background: 
-            url('hover.png') no-repeat 50% 50%,
-            url('birdsHover.png') no-repeat ; 
-           
+        &_birds:hover &_birds-photo {
+            background: url('hover.png') no-repeat 50% 50%, url('birdsHover.png') no-repeat;
         }
-        &_journal:hover &_journal-photo{
-            background: 
-            url('hover.png') no-repeat 50% 50%,
-            url('journalHover.png') no-repeat ; 
-           
+        &_journal:hover &_journal-photo {
+            background: url('hover.png') no-repeat 50% 50%, url('journalHover.png') no-repeat;
         }
-        &_see:hover &_see-photo{
-            background: 
-            url('hover.png') no-repeat 50% 50%,
-            url('seeHover.png') no-repeat ; 
-           
+        &_see:hover &_see-photo {
+            background: url('hover.png') no-repeat 50% 50%, url('seeHover.png') no-repeat;
         }
         &_phone:hover &_phone-text,
         &_mount:hover &_mount-text,
         &_book:hover &_book-text,
         &_birds:hover &_birds-text,
         &_journal:hover &_journal-text,
-        &_see:hover &_see-text{
-            background-color: rgb(54, 47, 45); 
+        &_see:hover &_see-text {
+            background-color: rgb(54, 47, 45);
         }
         &_phone:hover &_phone-text-caption,
         &_mount:hover &_mount-text-caption,
         &_book:hover &_book-text-caption,
         &_birds:hover &_birds-text-caption,
         &_journal:hover &_journal-text-caption,
-        &_see:hover &_see-text-caption{
-            color: white; 
+        &_see:hover &_see-text-caption {
+            color: white;
         }
         &_phone:hover &_phone-text-namePhoto,
         &_mount:hover &_mount-text-namePhoto,
         &_book:hover &_book-text-namePhoto,
         &_birds:hover &_birds-text-namePhoto,
         &_journal:hover &_journal-text-namePhoto,
-        &_see:hover &_see-text-namePhoto{
-            color: rgb(141, 126, 110); 
+        &_see:hover &_see-text-namePhoto {
+            color: rgb(141, 126, 110);
         }
     }
-    &__button{
+    &__button {
         height: 50px;
         width: 170px;
-        &_item{
+        &_item {
             font-weight: bold;
             font-family: 'Raleway', sans-serif;
             border: none;
@@ -699,12 +635,12 @@
             width: 170px;
             border-radius: 4px;
             color: white;
-            box-shadow: 0 3px 0 rgb(105, 92, 83); 
+            box-shadow: 0 3px 0 rgb(105, 92, 83);
         }
     }
-
 }
-.video{
+
+.video {
     height: 704px;
     width: 1234px;
     display: flex;
@@ -718,10 +654,10 @@
         height: 500px;
     }
     @media only screen and (max-width: 479px) {
-        width:100%;
+        width: 100%;
         height: 500px;
     }
-    &__wrapper{
+    &__wrapper {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -734,31 +670,29 @@
         background-size: cover;
         background-position: center;
         @media only screen and (max-width: 479px) {
-            width:100%;
+            width: 100%;
             height: 500px;
-            
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 800px;
             height: 500px;
         }
     }
-    &__play{
+    &__play {
         background: url('videoicon.png') no-repeat;
         width: 100px;
         height: 100px;
     }
-    &__caption{
+    &__caption {
         margin: 30px 0;
         font-size: 30px;
         font-family: "Raleway";
         color: rgb(255, 255, 255);
         @media only screen and (max-width: 479px) {
             font-size: 28px;
-
         }
     }
-    &__text{
+    &__text {
         line-height: 1.7;
         text-align: center;
         font-size: 16px;
@@ -766,11 +700,11 @@
         color: rgb(255, 255, 255);
         width: 580px;
         @media only screen and (max-width: 479px) {
-            width:100%;
+            width: 100%;
             padding: 0 20px;
         }
     }
-    &__time{
+    &__time {
         margin-top: 40px;
         font-weight: bold;
         font-size: 14px;
@@ -778,7 +712,8 @@
         color: rgb(199, 178, 153);
     }
 }
-.mobileDevices{
+
+.mobileDevices {
     min-height: 695px;
     width: 1234px;
     display: flex;
@@ -789,15 +724,11 @@
     align-items: center;
     @media screen and (orientation: landscape) and (max-width: 800px) {
         width: 800px;
-        
-       
     }
     @media only screen and (max-width: 479px) {
-        width:100%;
-        
-        
+        width: 100%;
     }
-    &__wrapper{
+    &__wrapper {
         background: rgb(251, 250, 248);
         display: flex;
         flex-direction: row;
@@ -808,19 +739,18 @@
         min-height: 695px;
         width: 100%;
         @media only screen and (max-width: 479px) {
-            width:100%;
-  
+            width: 100%;
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 800px;
         }
     }
-    &__imagePhone{
+    &__imagePhone {
         background: url('BigPhone.png') no-repeat;
         height: 695px;
         width: 534px;
         @media only screen and (max-width: 479px) {
-            width:100%;
+            width: 100%;
             background: url('bigphone800.png') no-repeat;
             padding: 0 20px;
         }
@@ -828,20 +758,16 @@
             width: 400px;
             background: url('bigphone800.png') no-repeat;
         }
-        
-       
     }
-    &__aboutPhone{
+    &__aboutPhone {
         width: 700px;
         @media only screen and (max-width: 479px) {
-            width:100%;
-          
+            width: 100%;
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 400px;
-           
         }
-        &_caption{
+        &_caption {
             margin: 40px 0;
             font-size: 30px;
             font-family: "Raleway";
@@ -849,30 +775,28 @@
             font-weight: bold;
             @media only screen and (max-width: 479px) {
                 text-align: center;
-                 padding: 0 20px;
+                padding: 0 20px;
             }
             @media screen and (orientation: landscape) and (max-width: 800px) {
                 font-size: 26px;
-               
             }
         }
-        &_text{
+        &_text {
             font-size: 16px;
             font-family: "Montserrat";
             color: rgb(140, 140, 140);
             line-height: 1.5;
             @media only screen and (max-width: 479px) {
                 font-size: 15px;
-                width:100%;
+                width: 100%;
                 padding: 0 20px;
             }
             @media screen and (orientation: landscape) and (max-width: 800px) {
                 font-size: 14px;
                 width: 380px;
-               
             }
         }
-        &_list{
+        &_list {
             height: 220px;
             width: 700px;
             display: flex;
@@ -881,18 +805,14 @@
             justify-content: center;
             align-content: center;
             align-items: center;
-            
-            
             @media only screen and (max-width: 479px) {
                 width: 100%;
                 padding: 0 20px;
-                
             }
             @media screen and (orientation: landscape) and (max-width: 800px) {
                 width: 380px;
-                
             }
-            &-item{
+            &-item {
                 line-height: 2;
                 width: 600px;
                 display: flex;
@@ -901,46 +821,34 @@
                 justify-content: flex-start;
                 align-content: center;
                 align-items: center;
-                
                 @media only screen and (max-width: 479px) {
                     width: 100%;
-                  
                 }
                 @media screen and (orientation: landscape) and (max-width: 800px) {
                     width: 380px;
-                   
-                   
                 }
-
-                
-                &-symbol{
+                &-symbol {
                     background: url('arrows.png') no-repeat;
                     min-height: 21px;
                     min-width: 22px;
-                   
                 }
-                &-par{
-                    
-                   line-height: 2;
+                &-par {
+                    line-height: 2;
                     margin-left: 25px;
                     font-size: 14px;
                     font-family: "Montserrat";
                     color: rgb(140, 140, 140);
-                    
                     @media only screen and (max-width: 479px) {
                         font-size: 13px;
-                       margin-left:  10px ;
-                      
-                      
+                        margin-left: 10px;
                     }
                 }
             }
         }
     }
-
-
 }
-.statics{
+
+.statics {
     margin: 0 150px;
     display: flex;
     flex-direction: row;
@@ -956,24 +864,22 @@
         align-content: center;
         align-items: center;
         margin: 0 30px;
-       
     }
     @media only screen and (max-width: 479px) {
-        width:100%;
+        width: 100%;
         margin: 0 30px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
-        align-content:space-between;
-        
+        align-content: space-between;
     }
-    &__wrapper{
+    &__wrapper {
         width: 100%;
         min-height: 302px;
-        background: #271e1b; 
-        background: -webkit-linear-gradient(left, #271e1b 0%,#473025 100%);
+        background: #271e1b;
+        background: -webkit-linear-gradient(left, #271e1b 0%, #473025 100%);
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -981,51 +887,52 @@
         align-content: center;
         align-items: center;
         @media only screen and (max-width: 479px) {
-            width:100%;
-            
+            width: 100%;
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 800px;
-            
-           
         }
     }
-    &__clients{
-        &_icon{
+    &__clients {
+        &_icon {
             background: url('clients.png') no-repeat;
             height: 44px;
             width: 44px;
         }
     }
-    &__coffe{
-        &_icon{
+    &__coffe {
+        &_icon {
             background: url('cups.png') no-repeat;
             height: 44px;
             width: 48px;
         }
     }
-    &__blogPosts{
-        &_icon{
+    &__blogPosts {
+        &_icon {
             background: url('posts.png') no-repeat;
             height: 44px;
             width: 44px;
         }
     }
-    &__likes{
-        &_icon{
+    &__likes {
+        &_icon {
             background: url('likes.png') no-repeat;
             height: 44px;
             width: 44px;
         }
     }
-    &__launch{
-        &_icon{
+    &__launch {
+        &_icon {
             background: url('launch.png') no-repeat;
             height: 44px;
             width: 54px;
         }
     }
-    &__clients, &__coffe, &__blogPosts, &__likes,&__launch{
+    &__clients,
+    &__coffe,
+    &__blogPosts,
+    &__likes,
+    &__launch {
         height: 170px;
         display: flex;
         flex-direction: column;
@@ -1034,30 +941,29 @@
         align-content: center;
         align-items: center;
         @media only screen and (max-width: 479px) {
-            width:50%;
-            
+            width: 50%;
         }
-
-        &_quantity{
+        &_quantity {
             font-size: 48px;
             font-family: "Montserrat";
             color: rgb(255, 255, 255);
             line-height: 0.75;
         }
-        &_name{
+        &_name {
             font-size: 14px;
             font-family: "Montserrat";
             color: rgb(199, 178, 153);
             text-transform: uppercase;
             line-height: 1.429;
         }
-        &_line{
+        &_line {
             width: 30px;
             border-bottom: 2px solid white;
         }
     }
 }
-.recentPosts{
+
+.recentPosts {
     min-height: 754px;
     width: 1234px;
     display: flex;
@@ -1067,16 +973,14 @@
     align-content: center;
     align-items: center;
     @media screen and (orientation: landscape) and (max-width: 800px) {
-        width:100%;
-        height:1100px;
-       
+        width: 100%;
+        height: 1100px;
     }
     @media only screen and (max-width: 479px) {
-        width:100%;
-        height:1400px;
-        
+        width: 100%;
+        height: 1400px;
     }
-    &__wrapper{
+    &__wrapper {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -1086,16 +990,15 @@
         width: 100%;
         min-height: 754px;
         @media only screen and (max-width: 479px) {
-            width:100%;
-            height:1400px;
+            width: 100%;
+            height: 1400px;
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
-            width:100%;
-            height:1100px;
-           
+            width: 100%;
+            height: 1100px;
         }
     }
-    &__caption{
+    &__caption {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -1107,24 +1010,21 @@
         color: rgb(85, 85, 85);
         font-weight: bold;
     }
-    &__text{
+    &__text {
         width: 760px;
         text-align: center;
         font-size: 16px;
         font-family: "Montserrat";
         color: rgb(140, 140, 140);
         @media only screen and (max-width: 479px) {
-            width:100%;
+            width: 100%;
             padding: 0 20px;
-            
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 700px;
-            
-           
         }
     }
-    &__slaidImage{
+    &__slaidImage {
         min-height: 395px;
         width: 1234px;
         display: flex;
@@ -1134,46 +1034,43 @@
         align-content: center;
         align-items: center;
         @media only screen and (max-width: 479px) {
-            width:100%;
+            width: 100%;
             height: 1200px;
-         
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 800px;
             align-content: space-between;
             height: 820px;
         }
-        &_men, &_women, &_ship{
+        &_men,
+        &_women,
+        &_ship {
             width: 370px;
             height: 395px;
             @media only screen and (max-width: 479px) {
-                width:100%;
+                width: 100%;
             }
-            &_text{
+            &_text {
                 padding: 30px;
                 background: rgb(255, 255, 255);
                 height: 175px;
                 @media only screen and (max-width: 479px) {
-                    width:100%;
-                   
-                   
+                    width: 100%;
                 }
-                &-caption{
+                &-caption {
                     font-size: 20px;
                     font-family: "Raleway";
                     color: rgb(85, 85, 85);
                     line-height: 1.2;
-                    
                 }
-                &-aboutThis{
-                   
+                &-aboutThis {
                     padding: 13px 0;
                     font-size: 13px;
                     font-family: "Montserrat";
                     color: rgb(140, 140, 140);
                     line-height: 1.571;
                 }
-                &-moreInf{
+                &-moreInf {
                     font-size: 14px;
                     font-family: "Montserrat";
                     color: rgb(199, 178, 153);
@@ -1181,80 +1078,70 @@
                     background: url('smallArows.png') no-repeat 90px 7px;
                 }
             }
-            
         }
-        &_men{
-            &_image{
-                background: url('date.png') no-repeat 20px 20px,url('men.png') no-repeat;
+        &_men {
+            &_image {
+                background: url('date.png') no-repeat 20px 20px, url('men.png') no-repeat;
                 width: 370px;
                 height: 220px;
                 @media only screen and (max-width: 479px) {
-                    width:100%;
-                   
-                   
+                    width: 100%;
                 }
             }
         }
-        &_women{
-            &_image{
-                background: url('date.png') no-repeat 20px 20px,url('women.png') no-repeat;
+        &_women {
+            &_image {
+                background: url('date.png') no-repeat 20px 20px, url('women.png') no-repeat;
                 width: 370px;
                 height: 220px;
                 @media only screen and (max-width: 479px) {
-                    width:100%;
-                   
-                   
+                    width: 100%;
                 }
             }
         }
-        &_ship{
-            &_image{
-                background: url('date.png') no-repeat 20px 20px,url('ship.png') no-repeat;
+        &_ship {
+            &_image {
+                background: url('date.png') no-repeat 20px 20px, url('ship.png') no-repeat;
                 width: 370px;
                 height: 220px;
                 @media only screen and (max-width: 479px) {
-                    width:100%;
-                   
-                   
+                    width: 100%;
                 }
             }
         }
         &_men:hover &_men_text,
         &_women:hover &_women_text,
-        &_ship:hover &_ship_text{
+        &_ship:hover &_ship_text {
             background: rgb(54, 47, 45);
         }
         &_men:hover &_men_text-caption,
         &_women:hover &_women_text-caption,
-        &_ship:hover &_ship_text-caption{
+        &_ship:hover &_ship_text-caption {
             color: rgb(144, 128, 112);
         }
         &_men:hover &_men_text-aboutThis,
         &_women:hover &_women_text-aboutThis,
-        &_ship:hover &_ship_text-aboutThis{
+        &_ship:hover &_ship_text-aboutThis {
             color: white;
         }
         &_men:hover &_men_text-moreInf,
         &_women:hover &_women_text-moreInf,
-        &_ship:hover &_ship_text-moreInf{
+        &_ship:hover &_ship_text-moreInf {
             font-weight: bold;
         }
-        &_men:hover &_men_image
-        {
-            background:url('dateHover.png') no-repeat 20px 20px, url('menHover.png') no-repeat,
+        &_men:hover &_men_image {
+            background: url('dateHover.png') no-repeat 20px 20px, url('menHover.png') no-repeat,
         }
-        &_women:hover &_women_image
-        {
-            background:url('dateHover.png') no-repeat 20px 20px, url('womenHover.png') no-repeat,
+        &_women:hover &_women_image {
+            background: url('dateHover.png') no-repeat 20px 20px, url('womenHover.png') no-repeat,
         }
-        &_ship:hover &_ship_image
-        {
-            background:url('dateHover.png') no-repeat 20px 20px, url('shipHover.png') no-repeat,
+        &_ship:hover &_ship_image {
+            background: url('dateHover.png') no-repeat 20px 20px, url('shipHover.png') no-repeat,
         }
-
     }
 }
-.sponsors{
+
+.sponsors {
     height: 489px;
     width: 1234px;
     display: flex;
@@ -1264,14 +1151,13 @@
     align-content: space-around;
     align-items: center;
     @media screen and (orientation: landscape) and (max-width: 800px) {
-        width:100%;
-       
+        width: 100%;
     }
     @media only screen and (max-width: 479px) {
-        width:100%;
+        width: 100%;
         min-height: 750px;
     }
-    &__wrapper{
+    &__wrapper {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -1284,39 +1170,36 @@
         background-size: cover;
         background-position: center;
         @media only screen and (max-width: 479px) {
-            width:100%;
+            width: 100%;
             min-height: 750px;
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
-            width:100%;
-            
-           
+            width: 100%;
         }
     }
-    &__barber{
+    &__barber {
         background: url('barber.png') no-repeat;
-        width: 210px ;
+        width: 210px;
         height: 127px;
-        
     }
-    &__delicious{
+    &__delicious {
         background: url('delicious.png') no-repeat;
-        width: 210px ;
+        width: 210px;
         height: 210px;
     }
-    &__designers{
+    &__designers {
         background: url('designers.png') no-repeat;
-        width: 210px ;
+        width: 210px;
         height: 130px;
     }
-    &__royal{
+    &__royal {
         background: url('royal.png') no-repeat;
-        width: 210px ;
+        width: 210px;
         height: 164px;
     }
-
 }
-.upperFooter{
+
+.upperFooter {
     min-height: 508px;
     width: 1234px;
     display: flex;
@@ -1330,12 +1213,11 @@
         margin: 0 30px;
     }
     @media only screen and (max-width: 479px) {
-        width:100%;
+        width: 100%;
         min-height: 800px;
         padding: 0 10px;
-        
     }
-    &__wrapper{
+    &__wrapper {
         background: rgb(25, 25, 25);
         display: flex;
         flex-direction: row;
@@ -1346,31 +1228,29 @@
         width: 100%;
         min-height: 508px;
         @media only screen and (max-width: 479px) {
-            width:100%;
+            width: 100%;
             min-height: 800px;
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 800px;
-           
         }
     }
-    &__aboutWaxon{
+    &__aboutWaxon {
         min-height: 348px;
         width: 260px;
         @media only screen and (max-width: 479px) {
-            width:45%;
+            width: 45%;
             min-height: 360px;
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 260px;
-           
         }
-        &_caption{
+        &_caption {
             background: url('logoHeader.png') no-repeat;
             height: 56px;
             width: 184px;
         }
-        &_text{
+        &_text {
             margin: 30px 0;
             font-size: 14px;
             font-family: "Montserrat";
@@ -1378,100 +1258,37 @@
             line-height: 1.714;
             font-weight: bold;
         }
-        &_more{
+        &_more {
             font-size: 14px;
             font-family: "Montserrat";
             color: rgb(209, 209, 209);
             line-height: 1.429;
             font-weight: bold;
-            background: url('arrowsWhite.png') no-repeat   90px 7px;
+            background: url('arrowsWhite.png') no-repeat 90px 7px;
         }
-       
     }
-    &__aboutWaxon:hover &__aboutWaxon_text{
+    &__aboutWaxon:hover &__aboutWaxon_text {
         color: rgb(199, 178, 153);
     }
-    &__recentPosts{
+    &__recentPosts {
         min-height: 348px;
         width: 276px;
         @media only screen and (max-width: 479px) {
-            width:45%;
+            width: 45%;
             min-height: 360px;
         }
-        &_caption{
+        &_caption {
             font-size: 24px;
             font-family: "Raleway";
             color: rgb(255, 255, 255);
             font-weight: bold;
-
             vertical-align: middle;
             line-height: 56px;
             @media only screen and (max-width: 479px) {
                 font-size: 20px;
-                
             }
         }
-        &_post{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-content: stretch;
-            align-items: flex-start;
-            width: 276px;
-            min-height: 99px;
-            @media only screen and (max-width: 479px) {
-                width:100%;
-                min-height: 99px;
-            }
-            &-date{
-                font-size: 12px;
-                font-family: "Montserrat";
-                color: rgb(54, 54, 54);
-                line-height: 1.667;
-                font-weight: bold;
-            }
-            &-text{
-                font-size: 14px;
-                font-family: "Montserrat";
-                color: rgb(85, 85, 85);
-                line-height: 1.429;
-                font-weight: bold;
-            }
-        }
-        &_post:nth-child(3){
-            border-top: 1px solid  rgb(29, 29, 29);
-            border-bottom:1px solid  rgb(29,29, 29);
-            
-        }
-        &_post:hover &_post-date{
-            color: rgb(255, 255, 255);
-        }
-        &_post:hover &_post-text{
-            color: rgb(199, 178, 153);
-        }
-    }
-    &__twitter{
-        min-height: 348px;
-        width: 276px;
-        @media only screen and (max-width: 479px) {
-            width:45%;
-            min-height: 360px; 
-        }
-        &_caption{
-            font-size: 24px;
-            font-family: "Raleway";
-            color: rgb(255, 255, 255);
-            font-weight: bold;
-
-            vertical-align: middle;
-            line-height: 56px;
-            @media only screen and (max-width: 479px) {
-                font-size: 20px;
-                
-            }
-        }
-        &_twett{
+        &_post {
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
@@ -1484,52 +1301,40 @@
                 width: 100%;
                 min-height: 99px;
             }
-            &-text{
-                font-size: 14px;
-                font-family: "Montserrat";
-                color: rgb(85, 85, 85);
-                line-height: 1.429;
-                font-weight: bold;
-                &-link{
-                    color: rgb(0, 191, 243);
-                }
-                &-linkWhite{
-                    color: white;
-                }
-            }
-            &-date{
+            &-date {
                 font-size: 12px;
                 font-family: "Montserrat";
                 color: rgb(54, 54, 54);
                 line-height: 1.667;
                 font-weight: bold;
             }
+            &-text {
+                font-size: 14px;
+                font-family: "Montserrat";
+                color: rgb(85, 85, 85);
+                line-height: 1.429;
+                font-weight: bold;
+            }
         }
-        &_twett:hover &_twett-text{
-            color: rgb(199, 178, 153);
+        &_post:nth-child(3) {
+            border-top: 1px solid rgb(29, 29, 29);
+            border-bottom: 1px solid rgb(29, 29, 29);
         }
-        &_twett:hover &_twett-date{
+        &_post:hover &_post-date {
             color: rgb(255, 255, 255);
         }
-        &_twett:nth-child(3){
-            height: 119px;
-            border-top: 1px solid  rgb(29, 29, 29);
-            border-bottom:1px solid  rgb(29,29, 29);
-            @media only screen and (max-width: 479px) {
-               
-                min-height: 140px;
-            }
-            
+        &_post:hover &_post-text {
+            color: rgb(199, 178, 153);
         }
     }
-    &__widget{
+    &__twitter {
         min-height: 348px;
-        width: 271px;
+        width: 276px;
         @media only screen and (max-width: 479px) {
             width: 45%;
-            min-height: 395px;
+            min-height: 360px;
         }
-        &_caption{
+        &_caption {
             font-size: 24px;
             font-family: "Raleway";
             color: rgb(255, 255, 255);
@@ -1538,10 +1343,76 @@
             line-height: 56px;
             @media only screen and (max-width: 479px) {
                 font-size: 20px;
-                
             }
         }
-        &_gallery{
+        &_twett {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: flex-start;
+            width: 276px;
+            min-height: 99px;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+                min-height: 99px;
+            }
+            &-text {
+                font-size: 14px;
+                font-family: "Montserrat";
+                color: rgb(85, 85, 85);
+                line-height: 1.429;
+                font-weight: bold;
+                &-link {
+                    color: rgb(0, 191, 243);
+                }
+                &-linkWhite {
+                    color: white;
+                }
+            }
+            &-date {
+                font-size: 12px;
+                font-family: "Montserrat";
+                color: rgb(54, 54, 54);
+                line-height: 1.667;
+                font-weight: bold;
+            }
+        }
+        &_twett:hover &_twett-text {
+            color: rgb(199, 178, 153);
+        }
+        &_twett:hover &_twett-date {
+            color: rgb(255, 255, 255);
+        }
+        &_twett:nth-child(3) {
+            height: 119px;
+            border-top: 1px solid rgb(29, 29, 29);
+            border-bottom: 1px solid rgb(29, 29, 29);
+            @media only screen and (max-width: 479px) {
+                min-height: 140px;
+            }
+        }
+    }
+    &__widget {
+        min-height: 348px;
+        width: 271px;
+        @media only screen and (max-width: 479px) {
+            width: 45%;
+            min-height: 395px;
+        }
+        &_caption {
+            font-size: 24px;
+            font-family: "Raleway";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            vertical-align: middle;
+            line-height: 56px;
+            @media only screen and (max-width: 479px) {
+                font-size: 20px;
+            }
+        }
+        &_gallery {
             margin-top: 10px;
             min-height: 207px;
             width: 271px;
@@ -1550,12 +1421,11 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: flex-start;
-            align-content:space-between;
+            align-content: space-between;
             @media only screen and (max-width: 479px) {
                 width: 100%;
             }
-            
-            &-doublePhone{
+            &-doublePhone {
                 background: url('doublePhone.png') no-repeat;
                 width: 130px;
                 height: 98px;
@@ -1563,7 +1433,7 @@
                     width: 45%;
                 }
             }
-            &-paper{
+            &-paper {
                 background: url('paper.png') no-repeat;
                 width: 130px;
                 height: 98px;
@@ -1571,7 +1441,7 @@
                     width: 45%;
                 }
             }
-            &-smallJournal{
+            &-smallJournal {
                 background: url('smallJournal.png') no-repeat;
                 width: 130px;
                 height: 98px;
@@ -1579,7 +1449,7 @@
                     width: 45%;
                 }
             }
-            &-pinkIcon{
+            &-pinkIcon {
                 background: url('pinkIcon.png') no-repeat;
                 width: 130px;
                 height: 98px;
@@ -1590,9 +1460,10 @@
         }
     }
 }
-.lowerFooter{
+
+.lowerFooter {
     min-height: 112px;
-    width:1234px;
+    width: 1234px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1600,15 +1471,14 @@
     align-content: center;
     align-items: center;
     @media screen and (orientation: landscape) and (max-width: 800px) {
-        width:100%;
-       margin: 0 30px;
+        width: 100%;
+        margin: 0 30px;
     }
     @media only screen and (max-width: 479px) {
-        width:100%;
+        width: 100%;
         padding: 0 20px;
-        
     }
-    &__wrapper{
+    &__wrapper {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -1616,19 +1486,16 @@
         align-content: center;
         align-items: center;
         background: rgb(17, 17, 17);
-        width:100%;
+        width: 100%;
         min-height: 112px;
         @media only screen and (max-width: 479px) {
-            width:100%;
-           
+            width: 100%;
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 800px;
-           
         }
-        
     }
-    &__contact{
+    &__contact {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1637,7 +1504,7 @@
         align-items: center;
         width: 400px;
         @media only screen and (max-width: 479px) {
-            width:45%;
+            width: 45%;
             flex-direction: column;
             align-content: flex-start;
             align-items: flex-start;
@@ -1648,20 +1515,20 @@
             align-content: flex-start;
             align-items: flex-start;
         }
-        &_items{
+        &_items {
             font-size: 13px;
             font-family: "Montserrat";
             color: rgb(85, 85, 85);
             line-height: 1.538;
             font-weight: bold;
-            &-link{
-                color:rgb(250, 250, 250);
+            &-link {
+                color: rgb(250, 250, 250);
             }
         }
-        &_items:nth-child(2){
-            border-right:1px solid rgb(29, 29, 29);
-            border-left:1px solid rgb(29, 29, 29);
-            width:111px;
+        &_items:nth-child(2) {
+            border-right: 1px solid rgb(29, 29, 29);
+            border-left: 1px solid rgb(29, 29, 29);
+            width: 111px;
             text-align: center;
             @media only screen and (max-width: 479px) {
                 text-align: left;
@@ -1672,9 +1539,9 @@
                 border: none;
             }
         }
-        &_items:nth-child(3){
-            border-right:1px solid rgb(29, 29, 29);
-            width:54px;
+        &_items:nth-child(3) {
+            border-right: 1px solid rgb(29, 29, 29);
+            width: 54px;
             text-align: center;
             @media only screen and (max-width: 479px) {
                 text-align: left;
@@ -1685,11 +1552,11 @@
                 border: none;
             }
         }
-        &_items:hover{
-            color: rgb(199, 178, 153); 
+        &_items:hover {
+            color: rgb(199, 178, 153);
         }
     }
-    &__developer{
+    &__developer {
         width: 321px;
         display: flex;
         flex-direction: row;
@@ -1700,31 +1567,29 @@
         @media only screen and (max-width: 479px) {
             width: 45%;
             flex-direction: column;
-            
         }
         @media screen and (orientation: landscape) and (max-width: 800px) {
             width: 200px;
             flex-direction: column;
             align-content: flex-start;
             align-items: flex-start;
-            
         }
-        &_items{
+        &_items {
             font-size: 13px;
             font-family: "Montserrat";
             color: rgb(85, 85, 85);
             line-height: 1.538;
             font-weight: bold;
-            &-link{
-                color:rgb(250, 250, 250);
+            &-link {
+                color: rgb(250, 250, 250);
             }
         }
-        &_items:nth-child(1){
-            width:163px;
+        &_items:nth-child(1) {
+            width: 163px;
         }
-        &_items:nth-child(2){
-            border-left:1px solid rgb(29, 29, 29);
-            width:157px;
+        &_items:nth-child(2) {
+            border-left: 1px solid rgb(29, 29, 29);
+            width: 157px;
             text-align: center;
             @media screen and (orientation: landscape) and (max-width: 800px) {
                 border: none;
@@ -1733,11 +1598,10 @@
             @media only screen and (max-width: 479px) {
                 border: none;
                 text-align: left;
-                
             }
         }
-        &_items:hover{
-            color: rgb(199, 178, 153); 
+        &_items:hover {
+            color: rgb(199, 178, 153);
         }
     }
 }
