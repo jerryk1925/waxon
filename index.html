@@ -447,6 +447,7 @@
         }
     </style>
     <title>Waxom</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="waxom.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -458,15 +459,15 @@
         <div class="header">
             <div class="header__logo">
             </div>
-            <div class="header__menu">
-                <div class="header__menu_item"><a href="" class="header__menu_item-link">Home</a> </div>
-                <div class="header__menu_item"><a href="" class="header__menu_item-link">About Us</a></div>
-                <div class="header__menu_item"><a href="" class="header__menu_item-link">Portfolio</a></div>
-                <div class="header__menu_item"><a href="" class="header__menu_item-link">Features</a></div>
-                <div class="header__menu_item"><a href="" class="header__menu_item-link">Blog</a></div>
-                <div class="header__menu_item"><a href="" class="header__menu_item-link">Pricing</a></div>
-                <div class="header__menu_item"><a href="" class="header__menu_item-link">Shortcodes</a></div>
-                <div class="header__menu_item"><a href="" class="header__menu_item-link">Contact</a></div>
+            <div class="header__menu" id="menu">
+                <div class="header__menu_item"><a href="#home" class="header__menu_item-link">Home</a> </div>
+                <div class="header__menu_item"><a href="#aboutus" class="header__menu_item-link">About Us</a></div>
+                <div class="header__menu_item"><a href="#portfolio" class="header__menu_item-link">Portfolio</a></div>
+                <div class="header__menu_item"><a href="#features" class="header__menu_item-link">Features</a></div>
+                <div class="header__menu_item"><a href="#blog" class="header__menu_item-link">Blog</a></div>
+                <div class="header__menu_item"><a href="#pricing" class="header__menu_item-link">Pricing</a></div>
+                <div class="header__menu_item"><a href="#shortcodes" class="header__menu_item-link">Shortcodes</a></div>
+                <div class="header__menu_item"><a href="#contact" class="header__menu_item-link">Contact</a></div>
             </div>
             <div class="header__equipment">
                 <div class="header__equipment_basket"></div>
@@ -475,7 +476,8 @@
         </div>
     </div>
 
-    <div class="portfolio__wrapper">
+    <div class="portfolio__wrapper" id="home">
+      
         <div class="portfolio">
             <div class="portfolio__header">Unique and modern Design</div>
             <div class="portfolio__banner"> Portfolio PSD Template</div>
@@ -484,10 +486,13 @@
                 <input type="button" value="GET STARTED" class="portfolio__button_item">
             </div>
         </div>
+    
     </div>
 
-    <div class="aboutus__wrapper">
+    <div class="aboutus__wrapper" id="aboutus">
+       
         <div class="aboutus">
+            
             <div class="aboutus__webapp">
                 <div class="aboutus__webapp_icon"></div>
                 <div class="aboutus__webapp_caption">Web & App Design</div>
@@ -513,6 +518,7 @@
                 <div class="aboutus__marketing_line"></div>
             </div>
         </div>
+        
     </div>
 
     <div class="wordPress__wrapper">
@@ -527,9 +533,10 @@
         </div>
     </div>
 
-    <div class="projects__wrapper">
+    <div class="projects__wrapper" id="portfolio">
+        
         <div class="projects">
-            <div class="projects__title">
+                <div class="projects__title">
                 <div class="projects__title_caption">Our Latest Projects</div>
                 <div class="projects__title_paragraph">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium</div>
             </div>
@@ -586,9 +593,10 @@
             </div>
             <div class="projects__button"><input type="button" value="LOAD MORE" class="projects__button_item"></div>
         </div>
+       
     </div>
 
-    <div class="video__wrapper">
+    <div class="video__wrapper" id="features">
         <div class="video">
             <div class="video__play"></div>
             <div class="video__caption">Waxom Video Presentation</div>
@@ -626,7 +634,7 @@
         </div>
     </div>
 
-    <div class="statics__wrapper">
+    <div class="statics__wrapper" id="shortcodes">
         <div class="statics">
             <div class="statics__clients">
                 <div class="statics__clients_icon"></div>
@@ -661,7 +669,7 @@
         </div>
     </div>
 
-    <div class="recentPosts__wrapper">
+    <div class="recentPosts__wrapper" id="blog">
         <div class="recentPosts">
             <div class="recentPosts__caption">Recent Posts.</div>
             <div class="recentPosts__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
@@ -694,7 +702,7 @@
         </div>
     </div>
 
-    <div class="sponsors__wrapper">
+    <div class="sponsors__wrapper" id="pricing">
         <div class="sponsors">
             <div class="sponsors__barber"></div>
             <div class="sponsors__delicious"></div>
@@ -703,8 +711,9 @@
         </div>
     </div>
 
-    <div class="upperFooter__wrapper">
-        <div class="upperFooter">
+    <div class="upperFooter__wrapper" id="contact">
+       
+        <div class="upperFooter" >
             <div class="upperFooter__aboutWaxon">
                 <div class="upperFooter__aboutWaxon_caption"></div>
                 <div class="upperFooter__aboutWaxon_text">Lorem ipsum dolor sit amet,consectetuer adipiscing elit sed diam nonummy nibh eusimod tincidunt ut laoreet dolore magna aliquip erat volutpat. Ut wisi enim ad minim veniam, quim nostrud exerci suscipit lobortis claritatem</div>
@@ -766,7 +775,17 @@
             </div>
         </div>
     </div>
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#menu").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 1500);
+           });
+       });
+    </script>    
 </body>
 
 </html>

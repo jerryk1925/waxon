@@ -572,8 +572,8 @@
 
 @media only screen and (max-width: 479px) {
   .projects__menu {
-    width: 100%;
-    height: 80px;
+    width: 108%;
+    min-height: 80px;
   }
 }
 
